@@ -68,14 +68,14 @@ h3{
     margin-top: 25px;
     border-top: 1px solid #ababab;
     border-bottom: 1px solid #ababab;
-    
+
 }
 
 .menu{
     display: flex;
     list-style-type: none;
     padding: 15px 0px;
-    
+
 }
 
 /* .menu>li>a:first-child{
@@ -106,11 +106,27 @@ h2{
 }
 
 .carusel{
-    height: 302px;
+    height: 315px;
     width: 450px;
     background-color: #d4d4d4;
 }
 
 .carusel-inner{
-    width: 300px;
+    width: 100%;
 }
+
+.preview{
+      width: 100%;
+}
+
+.slideControl{
+      height: 50px;
+      background-color: #fdfdfc;
+      display: relative;
+}
+
+.slideControl>h4{
+      margin-left: 85px;
+}
+
+.slideControl>,.slideControl>
