@@ -167,3 +167,62 @@ h2{
 .newsContent{
     padding: 5px 0px;
 }
+
+.inform{
+    margin-top: 35px;
+}
+
+h5{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.lastNewsWrapper{
+    display: inline-block;
+    width: 30%;
+
+}
+
+.lastNewsRow{
+    /* margin-top: 15px; */
+    display: flex;
+}
+
+.lastNewsElement{
+    margin-left: 50px;
+    list-style-type: none;
+    float: left;
+}
+
+.lastNewsElement:first-child{
+    margin: none;
+}
+
+.date{
+    /* display: inline-block; */
+    /* float: left; */
+    width: 35px; 
+}
+
+.Number{
+
+}
+
+.day{
+
+}
+
+.newsArticle{
+    /* display: inline-block; */
+    /* float: right; */
+}
+
+.aboutUs{
+    display: inline-block;
+    width: 30%;
+}
+
+.contactUsWrapper{
+    display: inline-block;
+    width: 30%;
+}
