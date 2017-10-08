@@ -233,6 +233,7 @@ h5{
 }
 
 .aboutUsArticle{
+    padding-right: 10px;
     margin-top: 30px;
 }
 
@@ -254,13 +255,36 @@ h5{
 .contactUsElement{
     border-bottom: 1px dashed #636363;
     list-style-type: none;
-    padding: 5px 0px;
+    padding: 10px 0px;
+    position: relative;
 }
 
 .icon{
+    position: absolute;
+}
 
+.icon-phone{
+    left: 9px;
+}
+
+.icon-mail{
+    left: 2px;
+}
+
+.icon-home{
+    top: 22px;
 }
 
 .contactItem{
     margin-left: 50px;
+}
+
+.clients{
+    margin-top: 40px;
+}
+
+.ourClientsWrapper{
+    border: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
 }
