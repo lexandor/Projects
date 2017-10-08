@@ -140,7 +140,7 @@ h2{
 .right{
     /* display: inline-block; */
     float: right;
-    margin-top: -22px;
+    margin-top: -18px;
 }
 
 .slideTitle{
@@ -181,7 +181,7 @@ h5{
 }
 
 .lastNewsWrapper{
-    
+
     width: 30%;
 
 }
