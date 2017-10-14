@@ -23,6 +23,69 @@ body{
 	display: table;
 }
 
+.container-white{
+	background-color: #fff;
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+
+.center{
+	margin: auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.subscribe{
+
+}
+
+/*===========================================
+				BUTTONS
+============================================*/
+
+.button{
+	height: 20px;
+	width: 225px;
+	background-color: #ff2d2d;
+	padding: 10px 0px;
+	border-radius: 5px;
+
+}
+
+.button:hover{
+	background-color: #c22222;
+}
+
+.button>a{
+	padding: 20px 68px;
+	font-weight: bold;
+	text-align: center;
+	color: #f6f2f2;
+	text-decoration: none;
+}
+
+.btn{
+	border: 2px solid #ff0000;
+	background-color: #fff;
+	margin-bottom: 120px;
+}
+
+.btn:hover{
+	border-color: #c22222;
+}
+
+.btn>a{
+	font-weight: bold;
+	color: #ff0000;
+	
+}
+
+.btn>a:hover{
+	color: #fff;
+}
+
 /*===========================================
 				NAVBAR
 ============================================*/
@@ -89,46 +152,20 @@ h1{
 	text-transform: uppercase;
 }
 
-.button{
-	height: 20px;
-	width: 225px;
-	background-color: #ff2d2d;
-	padding: 10px 0px;
-	border-radius: 5px;
-
-}
-
-.button:hover{
-	background-color: #c22222;
-}
-
-.button>a{
-	font-weight: bold;
-	margin-left: 70px;
-	text-align: center;
-	color: #f6f2f2;
-	text-decoration: none;
-}
-
 /*===========================================
 				SPECIALISATION
 ============================================*/
-
-.container-fich{
-	background-color: #fff;
-	padding-top: 100px;
-	padding-bottom: 104px;
-}
 
 h2{
 	font-weight: bold;
 	font-size: 2em;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
 .ourOfers>p{
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .ourOfers{
@@ -137,42 +174,46 @@ h2{
 	margin-right: 45px;
 }
 
-/*To Do: Оптимизировать кнопки
-____________________________________*/
-
-.btn{
-	border: 2px solid #ff0000;
-	background-color: #fff;
-	margin-bottom: 120px;
-}
-
-.btn:hover{
-	border-color: #c22222;
-	background-color: #fff;
-}
-
-.btn>a{
-	font-weight: bold;
-	color: #ff0000;
-}
-
-.btn>a:hover{
-	color: #c22222;
-}
-
-/*__________________________________*/
-
 .ficha_blok{
-	margin-left: 45px;
+	margin-left: 40px;
+	margin-bottom: 25px;
 	float: left;
 	width: 22%;
+}
+
+.ficha_icon{
+	margin-bottom: 10px;
+}
+
+.ficha_icon>img{
+	height: 60px;
 }
 
 h3{
 	margin-bottom: 20px;
 }
 
+/*===========================================
+				PRODUCTS
+============================================*/
+
+.fich_title{
+	margin: auto;
+	margin-top: 100px;
+}
+
+.fich_title>h2{
+	text-align: center;
+}
+
+.fich_title>p{
+	text-align: center;
+	max-width: 570px;
+}
+
 .line{
-	content: "";
-	border: 1px solid #ececec;
+	contain: "";
+	border: 1px solid #ff4848;
+	width: 130px;
+	margin-top: 35px;
 }
