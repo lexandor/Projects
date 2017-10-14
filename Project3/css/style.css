@@ -10,6 +10,7 @@
 body{
 	background-color: #f6f2f2;
 	font-family: sans-serif;
+	height: 3000px;
 }
 
 .container{
@@ -69,6 +70,7 @@ nav{
 
 .headerContent{
 	margin-top: 80px;
+	padding-bottom: 115px;
 }
 
 .screamTitle{
@@ -78,10 +80,11 @@ nav{
 
 .screamTitle>p{
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 62px;
 }
 
 h1{
+	font-weight: bold;
 	font-size: 3em;
 	text-transform: uppercase;
 }
@@ -91,13 +94,85 @@ h1{
 	width: 225px;
 	background-color: #ff2d2d;
 	padding: 10px 0px;
-	border-radius: 8px;
+	border-radius: 5px;
 
 }
 
+.button:hover{
+	background-color: #c22222;
+}
+
 .button>a{
+	font-weight: bold;
 	margin-left: 70px;
 	text-align: center;
 	color: #f6f2f2;
 	text-decoration: none;
+}
+
+/*===========================================
+				SPECIALISATION
+============================================*/
+
+.container-fich{
+	background-color: #fff;
+	padding-top: 100px;
+	padding-bottom: 104px;
+}
+
+h2{
+	font-weight: bold;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.ourOfers>p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ourOfers{
+	float: left;
+	width: 40%;
+	margin-right: 45px;
+}
+
+/*To Do: Оптимизировать кнопки
+____________________________________*/
+
+.btn{
+	border: 2px solid #ff0000;
+	background-color: #fff;
+	margin-bottom: 120px;
+}
+
+.btn:hover{
+	border-color: #c22222;
+	background-color: #fff;
+}
+
+.btn>a{
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.btn>a:hover{
+	color: #c22222;
+}
+
+/*__________________________________*/
+
+.ficha_blok{
+	margin-left: 45px;
+	float: left;
+	width: 22%;
+}
+
+h3{
+	margin-bottom: 20px;
+}
+
+.line{
+	content: "";
+	border: 1px solid #ececec;
 }
