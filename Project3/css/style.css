@@ -1,4 +1,103 @@
+/*===========================================
+				HELPERS
+============================================*/
+
 *{
 	margin: 0;
 	position: 0;
+}
+
+body{
+	background-color: #f6f2f2;
+	font-family: sans-serif;
+}
+
+.container{
+	padding: 0px 120px;
+}
+
+.clearfix{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*===========================================
+				NAVBAR
+============================================*/
+
+.navWrapper{
+	max-width: 1254;
+	margin-top: 25px;
+	background-color: #313030;
+}
+
+nav{
+	margin: auto;
+	min-height: 80px;
+}
+
+.menu{
+	padding: 0px;
+	margin: auto;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.menu_item{
+	height: 100%;
+	padding: 35px 0px;
+}
+
+.menu_item:hover{
+	background-color: #ff3f40;
+}
+
+.menu_item_link{
+	padding: 35px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f6f2f2;
+}
+
+/*===========================================
+				HEADER
+============================================*/
+
+.headerContent{
+	margin-top: 80px;
+}
+
+.screamTitle{
+	float: left;
+	max-width: 50%; 
+}
+
+.screamTitle>p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1{
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+.button{
+	height: 20px;
+	width: 225px;
+	background-color: #ff2d2d;
+	padding: 10px 0px;
+	border-radius: 8px;
+
+}
+
+.button>a{
+	margin-left: 70px;
+	text-align: center;
+	color: #f6f2f2;
+	text-decoration: none;
 }
