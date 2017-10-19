@@ -79,6 +79,13 @@ h3{
 	color: #737373;
 }
 
+h4{
+	color: #585858;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
 
 /*===========================================
 				BUTTONS
@@ -288,5 +295,83 @@ nav{
 
 .team_title{
 	width: 500px;
+}
 
+.team{
+	margin-top: 40px;
+}
+
+.team_tablet{
+	width: 650px;
+	float: right;
+	margin: 50px 130px 0px 0px;
+	display: none;
+
+}
+
+.team_tablet.displayed{
+	display: block;
+}
+
+.team_controller{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 35px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.team_controller_item{
+	list-style-type: none;
+	width: 180px;
+	height: 180px;
+	background-color: #f5f0dd;
+	margin-left: 18px;
+	position: relative;
+	border: 2px solid #585858;
+	margin-bottom: 50px;
+}
+
+.team_controller_item.displayed{
+	border: 2px solid rgba(255, 59, 59, 0.69);
+}
+
+.team_controller_item>img{
+	height: 100%;
+	width: 180px;
+}
+
+.leader{
+	height: 380px;
+	width: 270px;
+	margin-right: 60px;
+	margin-left: 0px;
+	background-color: #f5f0dd;
+	position: relative;
+}
+
+.leader>img{
+	box-sizing: border-box;
+	height: 380px;
+	width: 270px;
+}
+
+.sub_contacts{
+	display: flex;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 15px;
+}
+
+.sub_contacts>li{
+	margin-left: 18px;
+	list-style-type: none;
+}
+
+.sub_contacts>li:first-child{
+	margin-left: 0px;
+}
+
+.sub_contacts>li>a{
+	color: #585858;
 }
