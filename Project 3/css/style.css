@@ -702,7 +702,7 @@ footer{
 	}
 
 	.contact_form .button>a{
-		padding: 20px 95px;
+		padding: 20px 75px;
 	}
 }
 
@@ -717,6 +717,129 @@ footer{
 	}
 
 	.contact_form .button>a{
-		padding: 20px 80px;
+		padding: 20px 50px;
+	}
+}
+
+@media screen and (max-width: 685px){
+
+	.container{
+		padding: 20px 40px;
+	}
+
+	.menu{
+		display: block;
+	}
+
+	.menu_item_link{
+    	padding: 35px 105px;
+	}
+
+	video.video{
+		display: none;
+	}
+
+	.ficha_blok{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 40px;
+	}
+	
+	.fich_controller{
+		flex-wrap: wrap;
+	}
+
+	.fich_controller>li {
+    	margin: auto;
+    	margin-top: 20px;
+	}
+
+	.team_title{
+		width: 100%;
+	}
+
+	.hunter_title{
+		width: 100%;
+	}
+
+	.joinTeam{
+		flex-wrap: wrap;
+		margin-top: 35px;
+	}
+
+	.hunter_input{
+		padding: 10px 5px 10px 15px;
+		margin-right: 0px;
+	}
+
+	.sentButton{
+		margin-top: 20px;
+	}
+
+	.contact_title{
+		width: 100%;
+		margin: 0px;
+		margin-top: 60px;
+	}
+
+	.contact {
+    	display: block;
+    	/*flex-wrap: wrap;*/
+    	position: relative;
+    	padding: 0px;
+	}
+
+	.contact_form {
+	    width: 100%;
+	    margin-top: 70px;
+	}
+
+	.contact_info{
+		position: static;
+		margin-top: 70px;
+	    width: 100%;
+	    padding: 60px 20px;
+	    margin-bottom: 20px;
+	}
+
+	.contact_form .button>a {
+    	padding: 20px 90px;
+	}
+
+	.container-contact{
+		padding: 20px 40px; 
+	}
+
+}
+
+@media screen and (max-width: 375px){
+
+	.container, .container-contact{
+		padding: 20px 20px;
+	}
+
+	.line{
+		margin: auto;
+		margin-top: 35px;
+	}
+
+	.menu_item_link{
+    	padding: 35px 75px;
+	}
+
+	h1{
+		font-size: 2.4em;
+	}
+
+	.sub_contacts{
+		flex-wrap: wrap;
+	}
+
+	.sub_contacts>li{
+		margin-left: 0px;
+	}
+
+	.contact_form .button>a {
+    	padding: 20px 70px;
 	}
 }
