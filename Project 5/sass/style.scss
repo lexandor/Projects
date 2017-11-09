@@ -24,6 +24,15 @@ $greenLight: #69e44d;
     }
 }
 
+.dark{
+    background-color: $headerColor;
+}
+
+.light{
+    z-index: 300;
+    background-color: #fff;
+}
+
 .row{
     clear: both;
 }
@@ -42,6 +51,11 @@ $greenLight: #69e44d;
     src: url(../fonts/HelveticaBold.ttf);
 }
 
+@font-face {
+    font-family: "light";
+    src: url(../fonts/HelveticaLight.ttf);
+}
+
 h1{
     font-size: 4em;
     font-family: bold;
@@ -54,8 +68,34 @@ h2{
     color: #fff;
 }
 
+h3{
+    font-family: reg;
+    font-size: 2.5em;
+}
+
+h4{
+    font-family: bold;
+    font-size: 1.5em;
+}
+
 .upcase{
     text-transform: uppercase;
+}
+
+.bold{
+    font-family: bold;
+}
+
+.title{
+    line-height: 42px;
+    margin-top: 30px;
+}
+
+p{
+    margin-top: 20px;
+    line-height: 24px;
+    font-family: light;
+    color: #646464;
 }
 
 /*===========================================
@@ -104,10 +144,6 @@ nav{
                HEADER
 ============================================*/
 
-.dark{
-    background-color: $headerColor;
-}
-
 .scream{
     margin-top: 140px;
     margin-bottom: 220px;
@@ -131,12 +167,34 @@ nav{
 }
 
 .cirk{
-    width: 600px;
-    height: 600px;
-    border: solid 120px #202020;
-    border-radius: 50%;
+    // width: 600px;
+    // height: 600px;
+    // border: solid 120px #202020;
+    // border-radius: 50%;
     position: absolute;
-    top: 220px;
+    top: 230px;
     right: 10%;
     z-index: 20;
+}
+
+/*===========================================
+               APP
+============================================*/
+
+.download{
+    margin-top: 20px;
+    a{
+        margin-left: 20px;
+        img{
+            width: 150px;
+            height: 48px;
+        }
+    }
+}
+
+.phone{
+    margin-top: 40px;
+    img{
+        height: 500px;
+    }
 }
