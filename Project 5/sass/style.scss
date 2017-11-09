@@ -3,4 +3,140 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+ /*===========================================
+ 				HELPERS
+ ============================================*/
+
 @import "compass/reset";
+
+$headerColor: #121212;
+$greenDark: #22b737;
+$greenLight: #69e44d;
+.clearfix{
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.container{
+    *{
+        z-index: 100;
+    }
+}
+
+.row{
+    clear: both;
+}
+
+/*===========================================
+               TEXT
+============================================*/
+
+@font-face {
+    font-family: "reg";
+    src: url(../fonts/HelveticaRegular.ttf);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url(../fonts/HelveticaBold.ttf);
+}
+
+h1{
+    font-size: 4em;
+    font-family: bold;
+    color: #fff;
+}
+
+h2{
+    font-size: 2em;
+    font-family: reg;
+    color: #fff;
+}
+
+.upcase{
+    text-transform: uppercase;
+}
+
+/*===========================================
+               NAVIGATION
+============================================*/
+
+nav{
+    padding: 20px 0px;
+}
+
+#signup{
+    background-color: $headerColor;
+    color: white;
+    border-color: #2e2e2e;
+    font-family: reg;
+    &:hover{
+        background-color: #2e2e2e;
+    }
+    &:active{
+        background-color: $greenDark;
+    }
+}
+
+.logo{
+    width: 100px;
+    height: 50px;
+    background: url(../img/PLEX_LOGO.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.menu .menu_item{
+    &_link{
+        color: white;
+        font-family: reg;
+        &:hover{
+            color: $greenLight;
+            background-color: #202020;
+            border-radius: 30%;
+        }
+    }
+}
+
+/*===========================================
+               HEADER
+============================================*/
+
+.dark{
+    background-color: $headerColor;
+}
+
+.scream{
+    margin-top: 140px;
+    margin-bottom: 220px;
+    line-height: 60px;
+}
+
+#getstart{
+    background-color: $greenDark;
+    color: white;
+    border-color: $greenDark;
+    font-family: reg;
+    width: 165px;
+    &:hover{
+        background-color: $greenLight;
+        border-color: $greenLight;
+    }
+    &:active{
+        background-color: $greenLight;
+        border-color: $greenDark;
+    }
+}
+
+.cirk{
+    width: 600px;
+    height: 600px;
+    border: solid 120px #202020;
+    border-radius: 50%;
+    position: absolute;
+    top: 220px;
+    right: 10%;
+    z-index: 20;
+}

@@ -2,6 +2,9 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*===========================================
+				HELPERS
+============================================*/
 /* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +68,143 @@ a img {
 /* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 15, ../sass/style.scss */
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* line 22, ../sass/style.scss */
+.container * {
+  z-index: 100;
+}
+
+/* line 27, ../sass/style.scss */
+.row {
+  clear: both;
+}
+
+/*===========================================
+               TEXT
+============================================*/
+@font-face {
+  font-family: "reg";
+  src: url(../fonts/HelveticaRegular.ttf);
+}
+@font-face {
+  font-family: "bold";
+  src: url(../fonts/HelveticaBold.ttf);
+}
+/* line 45, ../sass/style.scss */
+h1 {
+  font-size: 4em;
+  font-family: bold;
+  color: #fff;
+}
+
+/* line 51, ../sass/style.scss */
+h2 {
+  font-size: 2em;
+  font-family: reg;
+  color: #fff;
+}
+
+/* line 57, ../sass/style.scss */
+.upcase {
+  text-transform: uppercase;
+}
+
+/*===========================================
+               NAVIGATION
+============================================*/
+/* line 65, ../sass/style.scss */
+nav {
+  padding: 20px 0px;
+}
+
+/* line 69, ../sass/style.scss */
+#signup {
+  background-color: #121212;
+  color: white;
+  border-color: #2e2e2e;
+  font-family: reg;
+}
+/* line 74, ../sass/style.scss */
+#signup:hover {
+  background-color: #2e2e2e;
+}
+/* line 77, ../sass/style.scss */
+#signup:active {
+  background-color: #22b737;
+}
+
+/* line 82, ../sass/style.scss */
+.logo {
+  width: 100px;
+  height: 50px;
+  background: url(../img/PLEX_LOGO.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* line 92, ../sass/style.scss */
+.menu .menu_item_link {
+  color: white;
+  font-family: reg;
+}
+/* line 95, ../sass/style.scss */
+.menu .menu_item_link:hover {
+  color: #69e44d;
+  background-color: #202020;
+  border-radius: 30%;
+}
+
+/*===========================================
+               HEADER
+============================================*/
+/* line 107, ../sass/style.scss */
+.dark {
+  background-color: #121212;
+}
+
+/* line 111, ../sass/style.scss */
+.scream {
+  margin-top: 140px;
+  margin-bottom: 220px;
+  line-height: 60px;
+}
+
+/* line 117, ../sass/style.scss */
+#getstart {
+  background-color: #22b737;
+  color: white;
+  border-color: #22b737;
+  font-family: reg;
+  width: 165px;
+}
+/* line 123, ../sass/style.scss */
+#getstart:hover {
+  background-color: #69e44d;
+  border-color: #69e44d;
+}
+/* line 127, ../sass/style.scss */
+#getstart:active {
+  background-color: #69e44d;
+  border-color: #22b737;
+}
+
+/* line 133, ../sass/style.scss */
+.cirk {
+  width: 600px;
+  height: 600px;
+  border: solid 120px #202020;
+  border-radius: 50%;
+  position: absolute;
+  top: 220px;
+  right: 10%;
+  z-index: 20;
 }
