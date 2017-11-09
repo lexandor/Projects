@@ -7,7 +7,7 @@
 ============================================*/
 /* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -136,28 +136,39 @@ h3 {
 }
 
 /* line 78, ../sass/style.scss */
-h4 {
+h4, h5 {
   font-family: bold;
   font-size: 1.5em;
 }
 
 /* line 83, ../sass/style.scss */
+h5 {
+  color: white;
+}
+
+/* line 88, ../sass/style.scss */
+h6 {
+  font-family: reg;
+  font-size: 1.15em;
+}
+
+/* line 93, ../sass/style.scss */
 .upcase {
   text-transform: uppercase;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .bold {
   font-family: bold;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .title {
   line-height: 42px;
   margin-top: 30px;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 p {
   font-size: 1.1em;
   margin-top: 20px;
@@ -169,28 +180,28 @@ p {
 /*===========================================
                NAVIGATION
 ============================================*/
-/* line 108, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 nav {
   padding: 20px 0px;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 #signup {
   background-color: #121212;
   color: white;
   border-color: #2e2e2e;
   font-family: reg;
 }
-/* line 117, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 #signup:hover {
   background-color: #2e2e2e;
 }
-/* line 120, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 #signup:active {
   background-color: #22b737;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .logo {
   width: 100px;
   height: 50px;
@@ -200,12 +211,12 @@ nav {
   background-position: center center;
 }
 
-/* line 135, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 .menu .menu_item_link {
   color: white;
   font-family: reg;
 }
-/* line 138, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .menu .menu_item_link:hover {
   color: #69e44d;
   background-color: #202020;
@@ -215,14 +226,14 @@ nav {
 /*===========================================
                HEADER
 ============================================*/
-/* line 150, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .scream {
   margin-top: 160px;
   margin-bottom: 285px;
   line-height: 60px;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 #getstart {
   background-color: #22b737;
   color: white;
@@ -230,18 +241,18 @@ nav {
   font-family: reg;
   width: 165px;
 }
-/* line 162, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 #getstart:hover {
   background-color: #69e44d;
   border-color: #69e44d;
 }
-/* line 166, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 #getstart:active {
   background-color: #69e44d;
   border-color: #22b737;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .cirk {
   position: absolute;
   height: 500px;
@@ -253,36 +264,36 @@ nav {
 /*===========================================
                APP
 ============================================*/
-/* line 188, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .app_title {
   padding-left: 30px;
 }
-/* line 190, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .app_title p {
   margin-top: 25px;
   padding-left: 80px;
 }
 
-/* line 196, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .download {
   margin-top: 20px;
   padding-left: 80px;
 }
-/* line 199, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .download a {
   margin-left: 20px;
 }
-/* line 201, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .download a img {
   width: 150px;
   height: 48px;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .phone {
   margin-top: 40px;
 }
-/* line 210, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .phone img {
   height: 620px;
 }
@@ -290,15 +301,59 @@ nav {
 /*===========================================
                AUTHOR
 ============================================*/
-/* line 219, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .author {
   margin-top: 40px;
 }
-/* line 221, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .author_photo {
   height: 505px;
   background: url(../img/AL2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+}
+
+/*===========================================
+               VIDEO
+============================================*/
+/* line 244, ../sass/style.scss */
+.videooff {
+  position: absolute;
+  z-index: 300;
+  background: url(../img/play.png);
+  background-repeat: no-repeat;
+  background-color: #121212;
+  background-position: center center;
+}
+/* line 251, ../sass/style.scss */
+.videooff h5 {
+  position: absolute;
+  bottom: 30%;
+  left: 41%;
+}
+
+/*===========================================
+               FOOTER
+============================================*/
+/* line 262, ../sass/style.scss */
+.contact {
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+/* line 266, ../sass/style.scss */
+.contact_item p {
+  font-size: 0.8em;
+}
+/* line 269, ../sass/style.scss */
+.contact_item .mail {
+  font-size: 1.2em;
+  color: #69e44d;
+  font-family: bold;
+}
+
+/* line 277, ../sass/style.scss */
+.copy {
+  font-size: 1em;
+  margin-bottom: 70px;
 }

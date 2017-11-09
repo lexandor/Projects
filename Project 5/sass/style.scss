@@ -80,6 +80,16 @@ h4{
     font-size: 1.5em;
 }
 
+h5{
+    @extend h4;
+    color: white;
+}
+
+h6{
+    font-family: reg;
+    font-size: 1.15em;
+}
+
 .upcase{
     text-transform: uppercase;
 }
@@ -225,4 +235,46 @@ nav{
     	background-size: cover;
     	background-position: center center;
     }
+}
+
+/*===========================================
+               VIDEO
+============================================*/
+
+.videooff{
+    position: absolute;
+    z-index: 300;
+    background: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-color: $headerColor;
+	background-position: center center;
+    h5{
+        position: absolute;
+        bottom: 30%;
+        left: 41%;
+    }
+}
+
+/*===========================================
+               FOOTER
+============================================*/
+
+.contact{
+    margin-top: 80px;
+    padding-bottom: 40px;
+    &_item{
+        p{
+            font-size: 0.8em;
+        }
+        .mail{
+            font-size: 1.2em;
+            color: $greenLight;
+            font-family: bold;
+        }
+    }
+}
+
+.copy{
+    font-size: 1em;
+    margin-bottom: 70px;
 }
