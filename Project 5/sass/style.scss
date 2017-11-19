@@ -150,6 +150,10 @@ nav{
             background-color: #202020;
             border-radius: 30%;
         }
+		&:focus{
+			background-color: $headerColor;
+			border: 0px solid;
+		}
     }
 }
 
@@ -235,6 +239,9 @@ nav{
     	background-size: cover;
     	background-position: center center;
     }
+	&_descript{
+		margin-bottom: 20px;
+	}
 }
 
 /*===========================================
@@ -263,6 +270,7 @@ nav{
     margin-top: 80px;
     padding-bottom: 40px;
     &_item{
+		margin-bottom: 40px;
         p{
             font-size: 0.8em;
         }
@@ -277,4 +285,96 @@ nav{
 .copy{
     font-size: 1em;
     margin-bottom: 70px;
+}
+
+/*===========================================
+               @MEDIA
+============================================*/
+
+@media screen and (max-width: 1024px){
+
+	// .menu_item{
+	// 	margin-left: -40px;
+	// }
+
+	.cirk{
+		top: 325px;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.phone{
+		// margin-left: 210px;
+		margin-left: 26%;
+	}
+
+	.cirk{
+		top: 218px;
+	}
+
+	.logo{
+		display: inline-block;
+	}
+
+	nav{
+		padding-right: 30px;
+	}
+
+	.contact_item {
+		p {
+		margin-top: 8px;
+		}
+		.mail{
+			margin-top: 25px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 425px){
+
+	.menu .menu_item_link{
+		width: 100%;
+		&:hover{
+			border-radius: 0px;
+		}
+	}
+
+	nav{
+		padding-right: 0px;
+	}
+
+	.cirk{
+		top: 478px;
+	}
+
+	.app_title p {
+		padding: 0px;
+	}
+
+	.phone{
+		margin-left: 9%;
+	}
+}
+
+@media screen and (max-width: 375px){
+
+	h1{
+		font-size: 3.2em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 320px){
+
+	.phone{
+		margin-left: -7%;
+	}
+
+	.download{
+		padding-left: 0px;
+	}
 }
