@@ -17,6 +17,10 @@ $darker: #ebebeb;
 	background-color: $dark;
 }
 
+.blue{
+	background-color: $blue;
+}
+
 .row{
 	padding-bottom: 35px;
 }
@@ -43,7 +47,8 @@ li{
 ============================================*/
 body{
 	font-size: 1.2rem;
-	font-family: Comic Sans MS;
+	font-family: arial;
+	// font-family: Comic Sans MS;
 }
 
 // h1,h2,h3,h4,h5,h6{
@@ -67,6 +72,13 @@ h2{
 	color: $blue;
 }
 
+h3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 2rem;
+	color: #fff;
+}
+
 h4{
 	font-size: 1.5rem;
 	color: $blue;
@@ -75,13 +87,22 @@ h4{
 /*===========================================
 				BUTTONS
 ============================================*/
+
+button{
+	width: 100%;
+	padding: 15px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	color: $blue;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
 /*===========================================
 				HEADER
 ============================================*/
-
-.blue{
-	background-color: $blue;
-}
 
 .header{
 	padding: 70px 0px;
@@ -134,10 +155,61 @@ h4{
 /*===========================================
 				BUYOFFERS
 ============================================*/
+.row-card{
+	width: 100%;
+}
 
 .buycard{
 	border: 1px solid $blue;
 	border-radius: 10px;
 	background-color: $blue;
+	ol{
+		margin-top: 20px;
+		li{
+			color: #fff;
+		}
+	}
 }
 
+.price{
+	background-color: #fff;
+	color: $blue;
+	margin: 0px -15px;
+	padding: 20px 0px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+/*===========================================
+				FOOTER
+============================================*/
+
+footer{
+	.title{
+		.col-12{
+			h2{
+				color: #fff;
+			}
+		}
+	}
+}
+
+.form{
+	input, textarea{
+		width: 100%;
+		margin: 10px 0px;
+		border: none;
+		border-radius: 5px;
+		padding: 10px;
+	}
+
+	button{
+		margin: 0px 25%;
+	}
+}
+
+.contact-item{
+	li{
+		color: #fff;
+	}
+}
