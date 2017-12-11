@@ -76,17 +76,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 20, ../sass/style.scss */
+.blue {
+  background-color: #445162;
+}
+
+/* line 24, ../sass/style.scss */
 .row {
   padding-bottom: 35px;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .title {
   width: 100%;
   text-align: center;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 li {
   margin: 10px 0px;
 }
@@ -97,25 +102,25 @@ li {
 /*===========================================
 				TEXT
 ============================================*/
-/* line 44, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 body {
   font-size: 1.2rem;
-  font-family: Comic Sans MS;
+  font-family: arial;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 p {
   line-height: 25px;
   margin: 15px 0px;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 h1 {
   font-size: 3rem;
   font-weight: 800;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 h2 {
   margin-top: 45px;
   margin-bottom: 35px;
@@ -123,7 +128,15 @@ h2 {
   color: #445162;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* line 82, ../sass/style.scss */
 h4 {
   font-size: 1.5rem;
   color: #445162;
@@ -132,23 +145,31 @@ h4 {
 /*===========================================
 				BUTTONS
 ============================================*/
+/* line 91, ../sass/style.scss */
+button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  color: #445162;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
 /*===========================================
 				HEADER
 ============================================*/
-/* line 82, ../sass/style.scss */
-.blue {
-  background-color: #445162;
-}
-
-/* line 86, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .header {
   padding: 70px 0px;
 }
-/* line 89, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .header-title h1 {
   margin-bottom: 20px;
 }
-/* line 92, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .header-title h1, .header-title li {
   color: white;
 }
@@ -159,7 +180,7 @@ h4 {
 /*===========================================
 				PLUSES
 ============================================*/
-/* line 109, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .pluse-item {
   margin: 20px 0px;
 }
@@ -170,14 +191,14 @@ h4 {
 /*===========================================
 				FEEDBACK
 ============================================*/
-/* line 122, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .comments-item {
   background-color: #ebebeb;
   padding: 5px;
   border-radius: 10px;
   margin-top: 10px;
 }
-/* line 127, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .comments-item .author {
   color: #445162;
   font-weight: 800;
@@ -186,9 +207,58 @@ h4 {
 /*===========================================
 				BUYOFFERS
 ============================================*/
-/* line 138, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
+.row-card {
+  width: 100%;
+}
+
+/* line 162, ../sass/style.scss */
 .buycard {
   border: 1px solid #445162;
   border-radius: 10px;
   background-color: #445162;
+}
+/* line 166, ../sass/style.scss */
+.buycard ol {
+  margin-top: 20px;
+}
+/* line 168, ../sass/style.scss */
+.buycard ol li {
+  color: #fff;
+}
+
+/* line 174, ../sass/style.scss */
+.price {
+  background-color: #fff;
+  color: #445162;
+  margin: 0px -15px;
+  padding: 20px 0px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*===========================================
+				FOOTER
+============================================*/
+/* line 190, ../sass/style.scss */
+footer .title .col-12 h2 {
+  color: #fff;
+}
+
+/* line 198, ../sass/style.scss */
+.form input, .form textarea {
+  width: 100%;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* line 206, ../sass/style.scss */
+.form button {
+  margin: 0px 25%;
+}
+
+/* line 212, ../sass/style.scss */
+.contact-item li {
+  color: #fff;
 }
