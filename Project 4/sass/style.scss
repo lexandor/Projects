@@ -8,29 +8,151 @@
 /*===========================================
 				HELPERS
 ============================================*/
+
+$hover: #d4a77d;
+$btn-color: #998675;
+$btn-color-bottom: #827163;
+$btn-color-hover: #362f2d;
+$btn-color-bottom-hover: #1b1818;
 /*===========================================
 				FONTS
 ============================================*/
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat-Light.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/Montserrat-Light.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Montserrat-Light.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Montserrat-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Montserrat-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'RalewayExBold';
+	src: url('../fonts/Raleway-ExtraBold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/Raleway-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Raleway-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Raleway-ExtraBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Raleway-ExtraBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'RalewayMed';
+	src: url('../fonts/Raleway-Medium.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/Raleway-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Raleway-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Raleway-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Raleway-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'RalewaySem';
+	src: url('../fonts/Raleway-SemiBold.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/Raleway-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Raleway-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Raleway-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Raleway-SemiBold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 /*===========================================
 				TEXT
 ============================================*/
+body{
+	font-family: 'Montserrat';
+	font-size: 10px;
+}
+
+h1{
+	font-family: 'RalewayExBold';
+	font-size: 5.2rem;
+	margin: 1rem 0;
+}
 /*===========================================
 				BUTTONS
 ============================================*/
+
+.button{
+	background-color: $btn-color;
+	border: none;
+	border-bottom: 3px solid $btn-color-bottom;
+	border-radius: 5px;
+	padding: 1.2rem 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'RalewayExBold';
+	font-size: 0.8rem;
+	&:focus{
+		outline: none;
+	}
+	&:hover{
+		background-color: $btn-color-hover;
+		border-bottom: 3px solid $btn-color-bottom-hover;
+	}
+}
 /*===========================================
 				HEADER
 ============================================*/
+.header{
+	&_bg{
+	filter: brightness(40%);
+	}
+	&-title{
+		text-align: center;
+		margin: 10rem auto 0px;
+		color: #ffffff;
+		span{
+			font-family: 'RalewayMed';
+			font-size: 2.6rem;
+		}
+		p{
+			font-family: 'Montserrat';
+			font-size: 1.2rem;
+			line-height: 1.6rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.fotorama{
+	&__dot{
+		border: 1px solid #fff;
+		width: 8px;
+		height: 8px;
+	}
+	&__nav-wrap{
+	position: absolute;
+	bottom: 0;
+	}
+}
+
+
 /*===========================================
 				NAVBAR
 ============================================*/
-
-nav{
-    background-color: #ddd;
-    width: 100%;
+header{
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 .nav{
-    width: 100%;
+	&-link{
+		color: #fff;
+		font-size: 1.1rem;
+		&:hover{
+			color: $hover;
+		}
+	}
 }
+.navbar{
+	width: 100%;
+	&-brand{
+		img{
+			height: 70px;
+		}
+	}
+}
+
 
 /*===========================================
 				######

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Ruby24/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -73,27 +73,140 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*===========================================
 				FONTS
 ============================================*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat-Light.ttf") format("truetype"), url("../fonts/Montserrat-Light.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RalewayExBold';
+  src: url("../fonts/Raleway-ExtraBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-ExtraBold.woff2") format("woff2"), url("../fonts/Raleway-ExtraBold.woff") format("woff"), url("../fonts/Raleway-ExtraBold.ttf") format("truetype"), url("../fonts/Raleway-ExtraBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RalewayMed';
+  src: url("../fonts/Raleway-Medium.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'RalewaySem';
+  src: url("../fonts/Raleway-SemiBold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype"), url("../fonts/Raleway-SemiBold.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
 /*===========================================
 				TEXT
 ============================================*/
+/* line 61, ../sass/style.scss */
+body {
+  font-family: 'Montserrat';
+  font-size: 10px;
+}
+
+/* line 66, ../sass/style.scss */
+h1 {
+  font-family: 'RalewayExBold';
+  font-size: 5.2rem;
+  margin: 1rem 0;
+}
+
 /*===========================================
 				BUTTONS
 ============================================*/
+/* line 75, ../sass/style.scss */
+.button {
+  background-color: #998675;
+  border: none;
+  border-bottom: 3px solid #827163;
+  border-radius: 5px;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'RalewayExBold';
+  font-size: 0.8rem;
+}
+/* line 85, ../sass/style.scss */
+.button:focus {
+  outline: none;
+}
+/* line 88, ../sass/style.scss */
+.button:hover {
+  background-color: #362f2d;
+  border-bottom: 3px solid #1b1818;
+}
+
 /*===========================================
 				HEADER
 ============================================*/
+/* line 97, ../sass/style.scss */
+.header_bg {
+  filter: brightness(40%);
+}
+/* line 100, ../sass/style.scss */
+.header-title {
+  text-align: center;
+  margin: 10rem auto 0px;
+  color: #ffffff;
+}
+/* line 104, ../sass/style.scss */
+.header-title span {
+  font-family: 'RalewayMed';
+  font-size: 2.6rem;
+}
+/* line 108, ../sass/style.scss */
+.header-title p {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* line 118, ../sass/style.scss */
+.fotorama__dot {
+  border: 1px solid #fff;
+  width: 8px;
+  height: 8px;
+}
+/* line 123, ../sass/style.scss */
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 0;
+}
+
 /*===========================================
 				NAVBAR
 ============================================*/
-/* line 27, ../sass/style.scss */
-nav {
-  background-color: #ddd;
+/* line 133, ../sass/style.scss */
+header {
+  position: absolute;
+  top: 0;
   width: 100%;
 }
 
-/* line 31, ../sass/style.scss */
-.nav {
+/* line 139, ../sass/style.scss */
+.nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+}
+/* line 142, ../sass/style.scss */
+.nav-link:hover {
+  color: #d4a77d;
+}
+
+/* line 147, ../sass/style.scss */
+.navbar {
   width: 100%;
+}
+/* line 150, ../sass/style.scss */
+.navbar-brand img {
+  height: 70px;
 }
 
 /*===========================================
