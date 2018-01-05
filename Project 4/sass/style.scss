@@ -90,6 +90,10 @@ h1{
 		border-bottom: 3px solid $btn-color-bottom-hover;
 	}
 }
+
+.btn-wrapper{
+	padding: 2rem 0rem;
+}
 /*===========================================
 				HEADER
 ============================================*/
@@ -155,11 +159,77 @@ header{
 
 
 /*===========================================
-				######
+				JOBS
 ============================================*/
+.L{	
+	position: absolute;
+	bottom: 0;
+	content: "";
+	width: 100%;
+	height: 4px;
+	&-line{
+		content: "";
+		height: 4px;
+		width: 35%;
+		background-color: #f7f5f2;
+		margin: auto;		
+	}
+}
+
+.job{
+	margin-top: 6rem;
+	margin-bottom: 2rem;
+	&-card{
+		height: 16rem;
+		position: relative;
+		text-align: center;
+		&-title{
+			font-size: 1.6rem;
+			margin: 1.2rem 0rem;
+			font-weight: 800;
+		}
+		&-content{
+			font-size: 1rem;
+			line-height: 1.8rem;
+		}
+		// &:hover + .job-card-title{
+		// 	color: $hover;
+		// }
+	}
+}
+
+
+.icon{
+	text-align: center;
+}
 /*===========================================
-				######
+				BUY LINE
 ============================================*/
+
+.buyline{
+	background: #211b19; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #211b19 0%, #4e3427 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #211b19 0%,#4e3427 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #211b19 0%,#4e3427 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	padding-top: 1rem;
+	&-title{
+		color: #fff;
+		padding: 1rem 0rem;
+		&-big{
+			font-size: 2rem;
+			margin-bottom: 1.2rem;
+			strong{
+				color: $hover;
+			}
+		}
+		&-small{
+			font-size: 1.5rem;
+		}
+	}
+	&-button{
+		width: 100%;
+	}
+}
 /*===========================================
 				######
 ============================================*/
