@@ -10,6 +10,7 @@
 ============================================*/
 
 $hover: #d4a77d;
+$bg: #fbfaf8;
 $btn-color: #998675;
 $btn-color-bottom: #827163;
 $btn-color-hover: #362f2d;
@@ -67,6 +68,18 @@ h1{
 	font-family: 'RalewayExBold';
 	font-size: 5.2rem;
 	margin: 1rem 0;
+}
+
+h2{
+	font-family: 'RalewaySem';
+	font-size: 2rem;
+	color: #555555;
+}
+
+small{
+	font-family: 'Montserrat';
+	font-size: 1rem;
+	color: #8c8c8c;
 }
 /*===========================================
 				BUTTONS
@@ -203,6 +216,47 @@ header{
 	text-align: center;
 }
 /*===========================================
+				SCREEN
+============================================*/
+
+.screen{
+	margin-top: 3rem;
+	background-color: $bg;
+	&-title{
+		text-align: center;
+		margin-top: 5rem;
+		margin-bottom: 0.8rem;
+		&-big{
+			margin-bottom: 2rem;
+		}
+		&-small{
+			line-height: 2.2rem;
+		}
+
+	}
+	&-browser{
+		position: relative;
+		min-height: 30rem;
+		&-img{
+			position: absolute;
+			&_left{
+				z-index: 10;
+				left: 0;
+			}
+			&_center{
+				z-index: 100;
+				left: 50%;
+				transform: translate(-50%, 0)
+			}
+			&_right{
+				z-index: 10;
+				right: 0;
+			}
+		}
+	}
+}
+
+/*===========================================
 				BUY LINE
 ============================================*/
 
@@ -215,9 +269,11 @@ header{
 	&-title{
 		color: #fff;
 		padding: 1rem 0rem;
+		font-family: 'RalewayMed';
 		&-big{
 			font-size: 2rem;
 			margin-bottom: 1.2rem;
+			color: #fff;
 			strong{
 				color: $hover;
 			}
@@ -230,6 +286,21 @@ header{
 		width: 100%;
 	}
 }
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
 /*===========================================
 				######
 ============================================*/
