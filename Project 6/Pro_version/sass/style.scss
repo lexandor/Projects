@@ -132,7 +132,7 @@ input{
 	}
 }
 
-.line{
+.liner{
 	content: "";
 	width: 100%;
 	height: 1.5rem;
@@ -179,6 +179,12 @@ input{
     padding-left: 10px;
 }
 
+.line {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $font;
+}
 
 /*===========================================
 				FOOTER
