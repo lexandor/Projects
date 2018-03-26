@@ -1,0 +1,235 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, D:/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*===========================================
+				HELPERS
+============================================*/
+/* line 24, ../sass/style.scss */
+body {
+  background-color: #001a33;
+  color: #EBEBEB;
+  font-family: Montserrat;
+}
+
+/* line 30, ../sass/style.scss */
+.header_comic {
+  border-bottom: 3px solid black;
+}
+
+/* line 34, ../sass/style.scss */
+div > img {
+  width: 100%;
+}
+
+/* line 39, ../sass/style.scss */
+.fl-l {
+  float: left;
+}
+/* line 42, ../sass/style.scss */
+.fl-r {
+  float: right;
+}
+
+/*===========================================
+				FONTS
+============================================*/
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+/*===========================================
+				TEXT
+============================================*/
+/* line 64, ../sass/style.scss */
+p {
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+/* line 69, ../sass/style.scss */
+p, a {
+  font-size: 25px;
+}
+
+/* line 73, ../sass/style.scss */
+b {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* line 78, ../sass/style.scss */
+h1 {
+  font-size: 70px;
+}
+
+/* line 82, ../sass/style.scss */
+h2 {
+  font-size: 50px;
+}
+
+/* line 86, ../sass/style.scss */
+h4 {
+  font-size: 30px;
+}
+
+/* line 90, ../sass/style.scss */
+.title {
+  margin: 40px 0px 80px;
+}
+/* line 92, ../sass/style.scss */
+.title_main {
+  text-align: center;
+  margin: 210px 0px 270px;
+}
+
+/*===========================================
+				BUTTONS
+============================================*/
+/*===========================================
+				HEADER
+============================================*/
+/*===========================================
+				NAVBAR
+============================================*/
+/* line 112, ../sass/style.scss */
+.navigation {
+  padding: 10px;
+}
+/* line 114, ../sass/style.scss */
+.navigation-fluid {
+  background-color: #060606;
+  opacity: 0.8;
+}
+/* line 118, ../sass/style.scss */
+.navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* line 127, ../sass/style.scss */
+.nav_item_link {
+  font-size: 20px;
+  color: #EBEBEB;
+  text-decoration: none;
+  border-top: 0px solid rgba(252, 130, 0, 0.6);
+  border-bottom: 0px solid rgba(252, 130, 0, 0.6);
+  padding: 25px 15px;
+  transition: 0.3s all;
+}
+/* line 136, ../sass/style.scss */
+.nav_item_link:hover {
+  color: #ff9933;
+  text-decoration: none;
+  border-top: 2px solid #ff9800;
+  border-bottom: 2px solid #ff9800;
+  padding: 10px 15px;
+  transition: 0.5s all;
+}
+/* line 144, ../sass/style.scss */
+.nav_item_logo {
+  margin-right: auto;
+}
+
+/* line 150, ../sass/style.scss */
+.logo {
+  height: 60px;
+}
+
+/*===========================================
+				LAST WORKS
+============================================*/
+/* line 158, ../sass/style.scss */
+.page {
+  margin-bottom: 90px;
+}
+
+/*===========================================
+				ABOUT COMICS
+============================================*/
+/* line 166, ../sass/style.scss */
+.about_comics {
+  background-color: rgba(252, 130, 0, 0.6);
+}
+/* line 168, ../sass/style.scss */
+.about_comics_img {
+  width: 300px;
+  margin-left: 30px;
+  margin-bottom: 25px;
+}
+
+/*===========================================
+				######
+============================================*/
+/*===========================================
+				######
+============================================*/
