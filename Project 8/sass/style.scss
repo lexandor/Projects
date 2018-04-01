@@ -6,174 +6,495 @@
 @import "compass/reset";
 
 /*===========================================
-				HELPERS
+                HELPERS
 ============================================*/
 
 $white: #EBEBEB;
 $black: #060606;
+$dark: #131313;
 $orange: #ff9933;
 $blue: #1a8cff;
+
 // $orange_dark: #804000;
 // $orange_dark: #774510;
 // $orange_dark: rgba(211, 109, 0, 0.7);
-$orange_dark: rgba(252, 130, 0, 0.6);
+$orange_dark: #674a23;
+
+// $orange_dark: rgba(252, 130, 0, 0.6);
 $blue_dark: #001a33;
 $black_black: #00001a;
 
+.or-b {
+    border-right: 4px double $orange;
+    border-left: 4px double $orange;
+}
+
+.bl-b {
+    border-right: 4px double $blue;
+    border-left: 4px double $blue;
+}
+
+.non-b {
+    border: none;
+}
 
 body {
-  background-color: $blue_dark;
-  color: $white;
-  font-family: Montserrat; //Позже шрифты надо поменять
+    background-color: $blue_dark;
+    color: $white;
+    font-family: Montserrat;
+
+    //Позже шрифты надо поменять
 }
 
-.header_comic{
-	border-bottom: 3px solid black;
+.header {
+    border-bottom: 3px solid black;
 }
 
-div>img{
-	width: 100%;
+div > img {
+    width: 100%;
 }
 
-.fl{
-	&-l{
-		float: left;
-	}
-	&-r{
-		float: right;
-	}
+.fl {
+    &-l {
+        float: left;
+    }
+
+    &-r {
+        float: right;
+    }
 }
+
+main {
+    position: relative;
+}
+
+// .black{
+//     content: "";
+//     position: absolute;
+//     background-color: rgba(0,0,0, 0.2);
+//     width: 100%;
+//     height: 100%;
+//     z-index: 0;
+// }
 
 /*===========================================
-				FONTS
+                FONTS
 ============================================*/
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/Montserrat-Regular.eot'); /* IE9 Compat Modes */
-	src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('../fonts/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-		 url('../fonts/Montserrat-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-		 url('../fonts/Montserrat-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-/*===========================================
-				TEXT
-============================================*/
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.eot");
 
-p{
-	margin-bottom: 20px;
-	line-height: 30px;
-}
+    /* IE9 Compat Modes */
+    src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#svgFontName") format("svg");
 
-p,a{
-	font-size: 25px;
-}
-
-b{
-	font-size: 30px;
-	font-weight: 800;
-}
-
-h1{
-	font-size: 70px;
-}
-
-h2{
-	font-size: 50px;
-}
-
-h4{
-	font-size: 30px;
-}
-
-.title{
-	margin: 40px 0px 80px;
-	&_main{
-		text-align: center;
-		margin: 210px 0px 270px;
-	}
-}
-
-.text{
-
+    /* Legacy iOS */
 }
 
 /*===========================================
-				BUTTONS
-============================================*/
-/*===========================================
-				HEADER
-============================================*/
-/*===========================================
-				NAVBAR
+                TEXT
 ============================================*/
 
-.navigation{
-	padding: 10px;
-		&-fluid{
-		background-color: $black;
-		opacity: 0.8;
-	}
-	ul{
-		display: flex;
-    	justify-content: flex-end;
-    	align-items: center;
+p {
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+p, a {
+    font-size: 25px;
+}
+
+b {
+    font-size: 30px;
+    font-weight: 800;
+    color: $blue;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+    color: $blue;
+    padding: 25px 0 25px;
+    line-height: 52px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.title {
+    padding: 50px 0px 50px;
+
+    &_main {
+        text-align: center;
+
+        // margin: 210px 0px 270px;
+        z-index: 100;
+    }
+
+    &_left {
+        margin: 40px 0px 80px;
     }
 }
 
-.nav{
-	&_item{
-    	&_link{
-    		font-size: 20px;
-        	color: $white;
-        	text-decoration: none;
-        	border-top: 0px solid $orange_dark;
-        	border-bottom: 0px solid $orange_dark;
-        	padding: 25px 15px;
-        	transition: 0.3s all;
-      	}
-      	&_link:hover{
-      		color: $orange;
-      		text-decoration: none;
-      		border-top: 2px solid #ff9800;
-      		border-bottom: 2px solid #ff9800;
-      		padding: 10px 15px;
-      		transition: 0.5s all;
-      	}
-      	&_logo{
-      		margin-right: auto;
-      	}
+.text {
+    padding-bottom: 100px;
+}
+
+.dark {
+    background-color: $dark;
+    color: $orange;
+}
+
+.or > h2 {
+    color: $orange;
+}
+
+.bl > h2 {
+    color: $blue;
+}
+
+strong {
+    font-weight: 800;
+}
+
+/*===========================================
+                BUTTONS
+============================================*/
+/*===========================================
+                HEADER
+============================================*/
+
+.Home_page {
+    // background-image: url(https://i.pinimg.com/originals/6e/1d/26/6e1d263fb1b223ff77bf724552e74ceb.jpg);
+    //background-image: url(http://www.twitrcovers.com/wp-content/uploads/2012/11/Horns-Fantasy-Art-l.jpg);
+    background-image: url(../img/bg/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Artist_page {
+    padding: 0px;
+    background-image: url(../img/bg/knight.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Lore_page {
+    padding: 0px;
+    background-image: url(../img/bg/hram.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Prototype_page {
+    padding: 0px;
+    background-image: url(../img/bg/die.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    padding: 210px 0px 270px;
+    background-color: rgba(0, 0, 0, 0.25);
+
+    &_artist_left {
+        background-color: $orange;
+        padding: 40px;
+    }
+
+    &_lore {
+        &_left {
+            // content: '';
+       
+        }
+
+        &_right {
+            background-color: $blue;
+            padding: 40px;
+        }
+    }
+
+    & > .title {
+        padding: 30px 0px 30px;
     }
 }
 
-.logo{
-	height: 60px;
-	
-}
 /*===========================================
-				LAST WORKS
+                NAVBAR
 ============================================*/
 
-.page{
-	margin-bottom: 90px;
+.navigation {
+    padding: 10px;
+
+    &-fluid {
+        background-color: $black;
+        opacity: 0.8;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.nav {
+    &_item {
+        &_link {
+            font-size: 20px;
+            color: $white;
+            text-decoration: none;
+            border-top: 0px solid $orange_dark;
+            border-bottom: 0px solid $orange_dark;
+            padding: 25px 15px;
+            transition: 0.3s all;
+        }
+
+        &_link:hover {
+            color: $orange;
+            text-decoration: none;
+            border-top: 2px solid #ff9800;
+            border-bottom: 2px solid #ff9800;
+            padding: 10px 15px;
+            transition: 0.5s all;
+        }
+
+        &_logo {
+            margin-right: auto;
+        }
+    }
+}
+
+.logo {
+    height: 60px;
 }
 
 /*===========================================
-				ABOUT COMICS
+                LAST WORKS
 ============================================*/
 
-.about_comics{
-	background-color: $orange_dark;
-	&_img{
-		width: 300px;
-		margin-left: 30px;
-		margin-bottom: 25px;
-	}
+.last_works {
+    padding-top: 80px;
 }
+
+.page {
+    padding-bottom: 90px;
+
+    &_left > img {
+        border: 4px double $blue;
+    }
+
+    &_right > img {
+        border: 4px double $blue;
+    }
+}
+
 /*===========================================
-				######
+                ABOUT COMICS
 ============================================*/
+
+.about_comics {
+    background-color: $dark;
+
+    &_img {
+        width: 300px;
+        margin-left: 30px;
+        margin-bottom: 25px;
+    }
+}
+
 /*===========================================
-				######
+                GENERS
 ============================================*/
+
+.geners {
+    &_bg {
+        background-image: url(../img/bg/genders.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &_list {
+        margin-top: 35px;
+        margin-bottom: 140px;
+
+        &_item {
+            list-style-type: circle;
+            font-size: 30px;
+            margin: 15px 0px;
+        }
+    }
+
+    &_title {
+        margin-top: 100px;
+    }
+}
+
+/*===========================================
+                HERO
+============================================*/
+
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/*===========================================
+                CALENDAR
+============================================*/
+
+.calc {
+    height: 340px;
+    border: 3px solid $blue;
+
+    &-bg {
+        padding-bottom: 80px;
+        background-image: url(../img/bg/sky.jpg);
+    }
+}
+
+/*===========================================
+                SUBSCRIPTION
+============================================*/
+
+.subscrption {
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-image: url(../img/bg/knight2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &_btn {
+        background-color: $blue-dark;
+        color: $blue;
+        border: none;
+        transition: 0.6s;
+    }
+
+    &_btn:hover {
+        background-color: $orange-dark;
+        color: $orange;
+        transition: 0.6s;
+    }
+
+    &_input {
+        height: 45px;
+        font-size: 20px;
+    }
+}
+
+/*===========================================
+                FOOTER
+============================================*/
+
+.footer {
+    background-color: $dark;
+    padding-top: 80px;
+    padding-bottom: 110px;
+
+    & .logo {
+        width: 340px;
+    }
+
+    &-contact {
+        &-item {
+            margin-bottom: 10px;
+            list-style-type: disc;
+
+            &-link {
+                color: #fff;
+            }
+
+            &-link:hover {
+                color: $orange;
+            }
+        }
+    }
+}
+
+/*===========================================
+                PERSON
+============================================*/
+
+.avatar {
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+
+    &_bl {
+        & > img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 6px double $blue;
+        }
+    }
+
+    &_or {
+        & > img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 6px double $orange;
+        }
+    }
+}
+
+.work {
+    padding-bottom: 50px;
+
+    &_bg {
+        &_artist {
+            background-image: url(../img/bg/night.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            // filter: grayscale(35%);
+       
+        }
+
+        &_lore {
+            background-image: url(../img/bg/trees.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            // filter: grayscale(35%);
+       
+        }
+    }
+}
+
+.artist, .lore {
+    padding-bottom: 60px;
+    background-color: $dark;
+}
+
+/*===========================================
+                MATERIAL
+============================================*/
+
+.material {
+    padding-top: 80px;
+}
+
+/*===========================================
+                PROTOTYPES
+============================================*/
+
+.prot {
+    margin: 50px 0px 50px;
+
+    & p {
+        margin-top: 25px;
+    }
+}
