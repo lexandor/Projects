@@ -270,11 +270,25 @@ strong {
         &_logo {
             margin-right: auto;
         }
+
+        &_btn {
+            display: none;
+            padding: 10px;
+        }
+
+        // &_mobile {
+        //     display: block;
+        // }
+
     }
 }
 
 .logo {
     height: 60px;
+}
+
+.fa-bars:hover{
+    color: $orange;
 }
 
 /*===========================================
@@ -283,6 +297,10 @@ strong {
 
 .last_works {
     padding-top: 80px;
+}
+
+.work-card {
+    margin-top: 10px;
 }
 
 .page {
@@ -359,6 +377,38 @@ strong {
         padding-bottom: 80px;
         background-image: url(../img/bg/sky.jpg);
     }
+}
+
+.calend {
+  height: 340px;
+}
+/* line 366, ../sass/style.scss */
+.calend-bg {
+  padding-bottom: 80px;
+  background-image: url(../img/bg/sky.jpg);
+}
+/* line 373, ../sass/style.scss */
+.calend-table-date td {
+  background-color: #E2E2E2;
+  padding: 15px;
+  width: 30px;
+  height: 30px;
+  color: #060606;
+}
+/* line 381, ../sass/style.scss */
+.calend-table-date td.disactive {
+  background-color: #9E9E9E;
+  color: #EBEBEB;
+}
+/* line 386, ../sass/style.scss */
+.calend-table-date td.active {
+  background-color: #ff1a1a;
+  color: #EBEBEB;
+}
+/* line 391, ../sass/style.scss */
+.calend-table-date .days {
+  background-color: #060606;
+  color: #ff9933;
 }
 
 /*===========================================
@@ -484,7 +534,7 @@ strong {
 ============================================*/
 
 .material {
-    padding-top: 80px;
+    padding: 80px 0px;
 }
 
 /*===========================================
@@ -496,5 +546,147 @@ strong {
 
     & p {
         margin-top: 25px;
+    }
+}
+
+/*===========================================
+                MEDIA
+============================================*/
+
+@media screen and (max-width: 1080px){
+    
+    .nav_item_link{
+        font-size: 17px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+// @media screen and (max-width: 1001px) {
+
+//     .header_lore_left,.header_artist_right {
+//         display: none;
+//     }
+// }
+
+@media screen and (max-width: 980px){
+
+    .navigation ul {
+        display: block;
+    }
+    
+    .navigation {
+        opacity: 0.8;
+    }
+
+    .navigation-fluid{
+        position: absolute;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .nav_item {
+        display: none;
+        margin: 35px 0px;
+
+        &_logo {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        &_btn {
+            display: inline-block;
+            vertical-align: middle;
+            float: right;
+        }
+
+        &_btn:hover {
+            border: $orange;
+        }
+
+        &_mobile {
+            display: block;
+        }
+    }
+    
+    p, a{
+       font-size: 22px;
+    }
+    
+    .header_lore_right .title,.header_artist_left .title{
+        margin-top: 40px;
+    }
+
+    .header_lore_left,.header_artist_right {
+        display: none;
+    }
+
+    .Lore_page .row, .Artist_page .row {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .fl-r {
+        width: 80%;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .subscrption_input {
+        margin-top: 20px;
+    }
+
+    .footer .logo{
+        margin-bottom: 105px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .title{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .geners_list{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .calend-bg {
+        display: none;
+    }
+
+    .footer .logo {
+        width: 250px;
+    }
+
+    .footer-contact-item-link {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    
+}
+
+@media screen and (max-width: 330px) {
+
+    h1{
+        font-size: 40px;
     }
 }
