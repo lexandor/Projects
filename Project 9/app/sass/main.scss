@@ -1,0 +1,61 @@
+/*===========================================
+               HELPERS
+============================================*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat';
+	color: #fff;
+}
+
+/*===========================================
+               FONTS
+============================================*/
+
+@font-face {
+    font-family: "reg";
+    src: url(../fonts/Montcerat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "med";
+    src: url(../fonts/Montcerat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "lig";
+    src: url(../fonts/Montcerat-Light.ttf);
+}
+
+/*===========================================
+               HOME
+============================================*/
+
+.videobg{
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	z-index: -10;
+}
+
+.nav{
+	display: flex;
+	height: 60px;
+	border-bottom: 1px solid rgba(#fff, 0.3);
+}
+
+.menu{
+	display: flex;
+	margin-left: auto;
+	&_item{
+		list-style-type: none;
+		padding: 20px;
+		&_link{
+			text-decoration: none;
+			padding: 20px;
+			text-align: center;
+			vertical-align: center;
+		}
+	}
+}
