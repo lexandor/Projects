@@ -24,6 +24,10 @@ $greenLight: #69e44d;
     }
 }
 
+.container-fluid{
+    overflow: hidden;
+}
+
 .dark{
     background-color: $headerColor;
 }
@@ -119,10 +123,11 @@ nav{
     padding: 20px 0px;
 }
 
-#signup{
+#download{
     background-color: $headerColor;
     color: white;
-    border-color: #2e2e2e;
+    border: 2px solid #2e2e2e;
+    border-radius: 25px;
     font-family: reg;
     &:hover{
         background-color: #2e2e2e;
@@ -135,31 +140,65 @@ nav{
 .logo{
     width: 100px;
     height: 50px;
-    background: url(../img/PLEX_LOGO.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-.menu .menu_item{
-    &_link{
-        color: white;
-        font-family: reg;
-        &:hover{
-            color: $greenLight;
-            background-color: #202020;
-            border-radius: 30%;
-        }
-		&:focus{
-			background-color: $headerColor;
-			border: 0px solid;
-		}
+    margin-right: auto;
+    img{
+        width: 100%;
     }
 }
 
+.menu{
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+
+    &_item{
+        margin-right: 14px;
+        &_link{
+            color: white;
+            font-family: reg;
+            text-decoration: none;
+            padding: 15px;
+            &:hover{
+                color: $greenLight;
+                background-color: #202020;
+                border-radius: 25px;
+                text-decoration: none;
+            }
+            &:focus{
+                background-color: $headerColor;
+                border: 0px solid;
+            }
+        }
+        &_btn {
+            display: none;
+            padding: 10px;
+        }
+    }
+
+    // &_active{
+    //     display: block;
+    // }
+}
+
+.fa-bars{
+    color: white;
+}
+
+.fa-bars:hover{
+    color: $greenLight;
+}
 /*===========================================
                HEADER
 ============================================*/
+
+header{
+    background-image: url(../img/cirk.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 
 .scream{
     margin-top: 160px;
@@ -167,12 +206,32 @@ nav{
     line-height: 60px;
 }
 
-#getstart{
+.btn{
     background-color: $greenDark;
     color: white;
     border-color: $greenDark;
     font-family: reg;
     width: 165px;
+
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    // border: 1px solid transparent;
+    border-radius: 4px;
     &:hover{
         background-color: $greenLight;
         border-color: $greenLight;
@@ -181,19 +240,24 @@ nav{
         background-color: $greenLight;
         border-color: $greenDark;
     }
+    &:focus{
+        text-decoration: none;
+        background-color: $greenLight;
+        border-color: $greenDark;
+    }
 }
 
-.cirk{
-    // width: 600px;
-    // height: 600px;
-    // border: solid 120px #202020;
-    // border-radius: 50%;
-    position: absolute;
-    height: 500px;
-    top: 216px;
-    right: 10%;
-    z-index: 20;
-}
+// .cirk{
+//     // width: 600px;
+//     // height: 600px;
+//     // border: solid 120px #202020;
+//     // border-radius: 50%;
+//     position: absolute;
+//     height: 500px;
+//     top: 216px;
+//     right: 10%;
+//     z-index: 20;
+// }
 
 /*===========================================
                APP
@@ -221,9 +285,31 @@ nav{
 
 .phone{
     margin-top: 40px;
+    //background-image: url(../img/app.png)
     img{
         height: 620px;
+        display: inherit;
+        margin: auto;
     }
+}
+
+.web{
+    margin-top: 40px;
+
+    img{
+        height: 620px;
+        display: inherit;
+        margin: auto;
+    }
+}
+
+.mobile{
+    padding-bottom: 40px;
+}
+
+.btn-link{
+    margin-top: 20px;
+    width: 100%;
 }
 
 /*===========================================
@@ -249,16 +335,20 @@ nav{
 ============================================*/
 
 .videooff{
-    position: absolute;
+    //position: absolute;
     z-index: 300;
+    display: block;
+    width: 100%;
+    height: 570px;
     background: url(../img/play.png);
     background-repeat: no-repeat;
     background-color: $headerColor;
 	background-position: center center;
     h5{
         position: absolute;
-        bottom: 30%;
-        left: 41%;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
@@ -300,22 +390,53 @@ nav{
 	.cirk{
 		top: 325px;
 	}
+
+    .web{
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .logo{
+        display: inline-block;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .menu_item{
+        display: none;
+        padding: 24px 0px;
+    }
+
+    .menu_item_btn{
+        display: block;
+        float: right;
+    }
+
+    .menu_active{
+        display: block;
+    }
+
+    #download{
+        border-radius: 0px;
+        border: none;
+        border-top: 2px solid #2e2e2e;
+    }
+
 }
 
 @media screen and (max-width: 768px){
 
-	.phone{
-		// margin-left: 210px;
-		margin-left: 26%;
-	}
+
 
 	.cirk{
 		top: 218px;
 	}
 
-	.logo{
-		display: inline-block;
-	}
+	
 
 	nav{
 		padding-right: 30px;
@@ -329,6 +450,10 @@ nav{
 			margin-top: 25px;
 		}
 	}
+
+    
+
+    
 
 }
 
@@ -353,9 +478,6 @@ nav{
 		padding: 0px;
 	}
 
-	.phone{
-		margin-left: 9%;
-	}
 }
 
 @media screen and (max-width: 375px){
@@ -369,10 +491,6 @@ nav{
 }
 
 @media screen and (max-width: 320px){
-
-	.phone{
-		margin-left: -7%;
-	}
 
 	.download{
 		padding-left: 0px;

@@ -1,4 +1,4 @@
-var gulp       = require('gulp'), // Подключаем Gulp
+var gulp         = require('gulp'), // Подключаем Gulp
 	sass         = require('gulp-sass'), // Подключаем Sass пакет,
 	compass      = require('gulp-compass');
 	browserSync  = require('browser-sync'), // Подключаем Browser Sync
@@ -11,7 +11,7 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	pngquant     = require('imagemin-pngquant'), // Подключаем библиотеку для работы с png
 	cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 	autoprefixer = require('gulp-autoprefixer'),// Подключаем библиотеку для автоматического добавления префиксов
-	pug          = require('gulp-pug'); // Подключаем Pug (препроцессор HTML)
+//	pug          = require('gulp-pug'); // Подключаем Pug (препроцессор HTML)
 
 
 //-----------ТАСК ДЛЯ SASS. ОТКЛЮЧЕН Т.К. ЕСТЬ COMPASS--------------------------------------
@@ -41,14 +41,17 @@ gulp.task('compass', function(){
     .pipe(browserSync.reload({stream: true}))
 })
 
-gulp.task('pug', function(){ // Создаем таск pug
-	return gulp.src('app/pug/pages/*.pug') // Берем источник
-		.pipe(pug({  // Настраиваем разметку
-			pretty: '\t'
-			}))
-		.pipe(gulp.dest('app/')) // Выгружаем результата в папку app
-		.pipe(browserSync.reload({stream: true})) // Обновляем при изменении
-})
+//-----------ТАСК ДЛЯ PUG ОТКЛЮЧЕН--------------------------------------
+//
+//gulp.task('pug', function(){ // Создаем таск pug
+//	return gulp.src('app/pug/pages/*.pug') // Берем источник
+//		.pipe(pug({  // Настраиваем разметку
+//			pretty: '\t'
+//			}))
+//		.pipe(gulp.dest('app/')) // Выгружаем результата в папку app
+//		.pipe(browserSync.reload({stream: true})) // Обновляем при изменении
+//})
+//-----------------------------------------------------------------------
 
 gulp.task('browser-sync', function() { // Создаем таск browser-sync
 	browserSync({ // Выполняем browserSync
@@ -76,14 +79,14 @@ gulp.task('css-libs', ['compass'], function() {
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['pug','browser-sync', 'css-libs', 'scripts', 'compass'], function() {
+gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'compass'], function() {
 	//gulp.watch(['app/sass/**/*.sass', 'app/sass/**/*.scss'], ['sass']); // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload); // Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
 	gulp.watch('app/sass/**/*.scss', ['compass'], browserSync.reload);
-	setTimeout(function(){
-		gulp.watch('app/pug/pages/*.pug', ['pug'])	// Наблюдение за Pug файлами в папке pug
-	}, 100)
+	//setTimeout(function(){
+	//	gulp.watch('app/pug/pages/*.pug', ['pug'])	// Наблюдение за Pug файлами в папке pug
+	//}, 100)
 	
 });
 
@@ -94,17 +97,17 @@ gulp.task('clean', function() {
 
 gulp.task('img', function() {
 	return gulp.src('app/img/**/*') // Берем все изображения из app
-		.pipe(cache(imagemin({ // С кешированием
-		// .pipe(imagemin({ // Сжимаем изображения без кеширования
+		//.pipe(cache(imagemin({ // С кешированием
+		.pipe(imagemin({ // Сжимаем изображения без кеширования
 			interlaced: true,
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
-		}))/**/)
+		}))/**///)
 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'compass', 'scripts', 'pug'], function() {
+gulp.task('build', ['clean', 'img', 'compass', 'scripts',], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/main.css',

@@ -1,32 +1,604 @@
 @import "compass/reset";
 
 /*===========================================
-                HELPERS
+               HELPERS
 ============================================*/
+
+h1, h2, h3, h4, h5, h6, p, a, li, ul, div, span{
+	font-family: 'Montserrat';
+}
+
+h3{
+	font-weight: 800;
+	font-size: 36px;
+	margin: 20px 0px;
+}
+
+h4{
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+p{
+	font-size: 20px;
+}
+
+.fix{
+	overflow: hidden;
+}
+
+.row-flude{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+article{
+	margin-bottom: 60px;
+}
 /*===========================================
-                HELPERS
+               FONTS
 ============================================*/
+
+@font-face {
+    font-family: "reg";
+    src: url(../fonts/Montcerat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "med";
+    src: url(../fonts/Montcerat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "lig";
+    src: url(../fonts/Montcerat-Light.ttf);
+}
+
 /*===========================================
-                HELPERS
+               NAV
 ============================================*/
+
+.logo{
+	height: 80%;
+	margin: auto 0px;
+	margin-left: 20px;
+	img{
+		height: 100%;
+	}
+}
+
+.nav{
+	display: flex;
+	height: 60px;
+	background-color: #000;
+}
+
+.index .nav{
+	border-bottom: 1px solid rgba(#fff, 0.3);
+	background-color: rgba(#000, 0);
+}
+
+.menu{
+	display: flex;
+	margin-left: auto;
+	&_item{
+		list-style-type: none;
+		padding: 20px;
+		&_link{
+			text-decoration: none;
+			padding: 20px;
+			text-align: center;
+			font-weight: 800;
+			color: #fff;
+		}
+		&_link:hover{
+			color: #000;
+			background-color: #fff;
+			border-bottom: 2px solid gray;
+			transition: background-color 0.5s linear;
+		}
+		&_btn{
+			display: none;
+			color: #fff;
+			margin-right: 20px;
+		}
+		
+	}
+	&_mobile{
+			display: block !important;
+	}
+}
+
+.fa-bars:before {
+    vertical-align: -webkit-baseline-middle;
+}
+
 /*===========================================
-                HELPERS
+               FOOTER
 ============================================*/
+
+.footer{
+	background-color: #000;
+	color: #bcbcbc;
+	padding: 50px 30px;
+	font-size: 20px;
+	.logo{
+		height: 70px;
+		position: absolute;
+		bottom: 0px;
+		margin-left: 0px;
+	}
+	a{
+		color: #888888;
+	}
+
+	li{
+		margin-bottom: 10px;
+	}
+
+	.social{
+		justify-content: space-between;
+		//margin-top: 20px;
+	}
+}
+
 /*===========================================
-                HELPERS
+               HOME
 ============================================*/
+
+.videobg{
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -10;
+	filter: grayscale(0.7);
+} // Пофиксить горизонтальную прокрутку
+
+
+.main{
+	padding: 10% 10% 0;
+	.title{
+		margin: auto;
+		line-height: 100px;
+		color: #fff;
+		h1, h2{
+			text-align: center;	
+		}
+		h1{
+			font-size: 100px;
+		}
+		h2{
+			font-size: 36px;
+			letter-spacing: 18px;
+			font-weight: lighter;
+		}
+	}
+
+	.text{
+		margin: auto;
+		width: 85%;
+		text-align: center;
+		p{
+			margin-bottom: 30px;
+			color: #fff;
+		}
+	}
+}
 /*===========================================
-                HELPERS
+               AUTHOR
 ============================================*/
+
+.header{
+	background-size: cover;
+}
+
+.header.author{
+	background-image: url(../img/header.jpg);
+	height: 720px;
+}
+
+.social{
+	display: flex;
+	justify-content: space-around;
+	&_bar{
+		width: 300px;
+		margin: auto;
+	}
+	&_item{
+		list-style-type: none;
+		&_link{
+			color: #fff;
+		}
+	}
+}
+
+.alex{
+	margin: 60px auto;
+
+	img{
+		width: 100%;
+		border-radius: 50%;
+	}
+}
+
 /*===========================================
-                HELPERS
+               BLOG
 ============================================*/
+
+.header.blog{
+	height: 620px;
+	background-image: url(../img/bg_blog.jpg);
+}
+
+//--------------
+// .header.blog *{
+// 	color: #000 !important;
+// }
+//--------------
+
+.search{
+	display: inline-block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	margin-top: 90px;
+	position: relative;
+	&_form{
+		padding: 15px 20px 15px 60px;
+		width: 100%;
+		border: none;
+		border-radius: 50px;
+		outline: none;
+		background-color: #d5d5d5;
+		font-size: 20px;
+		border: 1px solid #acacac;
+		transition: background-color 0.3s linear
+	}
+	&_form:focus{
+		background-color: #fff;
+		transition: background-color 0.3s linear;
+	}
+	&_btn{
+		background: none;
+		border: none;
+		color: #000;
+		outline: none;
+		position: absolute;
+		left: 11px;
+		top: 0;
+		transform: translateY(50%);
+		// Костыли
+		padding: 20px;
+		margin: -37px -20px -20px -20px;
+	}
+	&_btn:hover{
+		filter: drop-shadow(0px 0px 4px rgba(0,0,0,1));
+		i{
+			font-size: 30px;
+			//Костыли
+			margin-top: -3px;
+		}
+	}
+	
+}
+
+.category{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px 35px;
+	justify-content: space-between;
+	&_item{
+		margin: 10px 0px;
+		padding: 20px;
+		border-radius: 50px;
+		border: 1px solid #000;
+		font-weight: 800;
+		transition: 0.3s linear color;
+		transition: 0.3s linear background-color;
+	}
+	&_item.active{
+		background-color: #000;
+		color: #fff;
+		border-color: #fff;
+	}
+	&_item:hover{
+		background-color: #000;
+		color: #fff;
+		transition: 0.3s linear color;
+		transition: 0.3s linear background-color;
+	}
+}
+
+.article{
+	margin-left: 20px;
+	margin-bottom: 100px;
+	background-color: #000;
+	box-shadow: 0px 0px 15px 5px #00000070;
+	&_prev{
+		&_img{
+			max-height: 400px;
+			overflow: hidden;
+			img{
+				width: 100%;
+			}	
+		}
+		&_content{
+			background-color: #000;
+			position: relative;
+			p{
+				display: inline-block;
+				width: 85%;
+				padding: 10px;
+				background-color: #eee;
+			}
+		}
+		&_btn{
+			width: 14%;
+			display: inline-block;
+			color: #fff;
+			text-align: center;
+			vertical-align: super;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&_footer{
+			height: 20px;
+			background-color: #000;
+		}
+	}
+	h3{
+		margin: 0px;
+		padding: 20px;
+		background-color: #eee;
+	}
+}
+
+.side{
+	&_search{
+		overflow: hidden;
+		border-radius: 12px;
+		width: 75%;
+		margin-top: 40px;
+		&_bar{
+			background-color: #eee;
+			box-shadow: 0px 0px 15px 5px #00000070;
+			padding: 10px 10px 40px;
+			margin-bottom: 100px;
+			//Костыль
+			margin-right: 15%;
+			overflow: hidden;
+		}
+	}
+	&_search_btn{
+		background-color: #000;
+		color: #fff;
+		left: 17px;
+	}
+	&_search_form{
+		padding-left: 70px;
+		border-radius: 12px;
+		background-color: #fff;
+	}
+}
+
+.taglist{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 25px;
+	&_item{
+		font-size: 16px;
+		border: 1px solid #000;
+		border-radius: 16px;
+		padding: 10px;
+		margin: 4px;
+	}
+}
+
+
 /*===========================================
-                HELPERS
+               CONTACTS
 ============================================*/
+
+.header.contacts{
+	.title{
+		color: #000;
+		margin-bottom: 200px;
+	}
+}
+
+.contactList{
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	font-weight: 800;
+	&_item{
+		margin: 20px 0px;
+		font-size: 30px;
+		font-weight: 200;
+		&_link{
+			color: #000;
+			text-decoration: none;
+		}
+		&_link:visited{
+			color: #000;
+		}
+		&_link:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
 /*===========================================
-                HELPERS
+               ARTICLE
 ============================================*/
+
+.ARTICLE{
+	position: relative;
+	padding: 50px 0px;
+	h3{
+		margin: 50px 0px;
+	}
+	p{
+		line-height: 34px;
+	}
+}
+
+.header_article{
+	background-image: url(../img/prev1.jpg);
+	height: 600px;
+	.title{
+		background-color: #000;
+		padding-top: 20px;
+	}
+}
+
+.article_back_btn{
+	color: #fff;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 80px;
+	height: 80px;
+	background-color: #000;
+	text-align: center;
+	&:hover{
+		box-shadow: 4px 4px 20px 8px #0000006b;
+	}
+	i {
+		margin-top: 10%;
+	}
+}
+
 /*===========================================
-                HELPERS
+               MEDIA
 ============================================*/
+
+@media screen and (max-width: 990px){
+	.side_search_bar{
+		margin: auto;
+		margin-bottom: 40px;
+	}
+
+	.article{
+		margin: auto;
+		margin-bottom: 100px;
+	}
+
+	.footer .logo{
+		position: static;
+		margin-top: 10px;
+	}
+}
+
+
+@media screen and (max-width: 765px){
+	.menu_item_btn{
+		display: block;
+		position: absolute;
+		right: 20px;
+	}
+	.menu_item{
+		z-index: 10000;
+		padding: 0px;
+	}
+	.menu_item_link{
+		padding: 20px;
+		display: block;
+	}
+	.menu{
+		background-color: rgba(#000, 0.8);
+		display: none;
+		margin-top: 60px;
+		position: absolute;
+		right: 0px;
+		width: 40%;
+		height: 100%;
+		
+	}
+	.menu_mobile{
+		animation: navup linear 0.2s;
+
+		// @kayframes navup{
+		// 	0% {
+		// 		right: -40%;
+		// 	};
+
+		// 	100% {
+		// 		right: 0;
+		// 	};
+		// };
+
+		//костыли
+		@mixin keyframes($name) {
+
+		  @keyframes navup {
+		    @content;
+		  }
+		}
+		@include keyframes(navup){
+			0%   { right: -40%; }
+			100% { right: 0; }
+		};
+	}
+
+	.category{
+		justify-content: center;
+		&_item{
+			margin: 10px;
+		}
+	}
+
+	.search{
+		width: 80%;
+	}
+
+	.main .title h2{
+		line-height: 35px;
+		margin-bottom: 30px;
+	}
+
+	.header_article .title{
+		padding: 10px;
+	}
+
+	// .sidebar{
+	// 	overflow: hidden;
+	// }
+}
+
+
+@media screen and (max-width: 720px){
+    
+	.main .title{
+		h1{
+			font-size: 60px;
+		}
+		h2{
+			font-size: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 560px){
+	.alex{
+		width: 90%;
+	}
+
+	article{
+		padding: 0px 22px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	
+	.main .text p{
+		font-size: 14px;
+	}
+}
