@@ -8,597 +8,299 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul, div, span{
 	font-family: 'Montserrat';
 }
 
-h3{
-	font-weight: 800;
-	font-size: 36px;
-	margin: 20px 0px;
+strong{
+	color: #1abc9c
 }
 
-h4{
-	font-size: 26px;
-	margin-bottom: 20px;
+a{
+	text-decoration: none;
 }
 
-p{
-	font-size: 20px;
+html{
+	font-size: 10px;
 }
 
-.fix{
-	overflow: hidden;
+.active-item{
+	display: block;
 }
 
-.row-flude{
-	margin-right: 0px;
-	margin-left: 0px;
-}
-
-article{
-	margin-bottom: 60px;
-}
 /*===========================================
-               FONTS
+               HEADER
 ============================================*/
-
-@font-face {
-    font-family: "reg";
-    src: url(../fonts/Montcerat-Regular.ttf);
+header{
+	padding: 90px 0px 30px;
+	background-color: #7a7a7a;
+	min-height: 100vh;
+	color: #fff;
+	h1{
+		font-size: 4rem;
+		text-align: center;
+		margin-top: 18px;
+	}
+	h3{
+		font-size: 1.4rem;
+		text-align: center;
+		font-weight: 1000;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	h5{
+		font-size: 2.2rem;
+		text-align: center;
+		margin-top: 26px;
+	}
+	p{
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 26px;
+		a, a:visited{
+			color: #1abc9c;
+		}
+	}
 }
 
-@font-face {
-    font-family: "med";
-    src: url(../fonts/Montcerat-Medium.ttf);
+.subscribe{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 18%;
 }
 
-@font-face {
-    font-family: "lig";
-    src: url(../fonts/Montcerat-Light.ttf);
+
+/* ------ TITLE ------ */
+
+.title{
+	margin: 100px auto;
+	&-icon{
+		height: 70px;
+		margin-bottom: 40px;
+		text-align: center;
+		i{
+			font-size: 60px;
+		}
+	}
+	h3{
+		font-size: 1.8rem;
+		margin-bottom: 30px;
+		text-align: center;
+		font-weight: 1000;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	h2{
+		font-size: 6rem;
+		text-align: center;
+	}
 }
+
+
 
 /*===========================================
                NAV
 ============================================*/
 
+nav, .nav-wrapper, .menu, .social{
+	display: flex;
+	height: 100%;
+}
+
+nav{
+	box-shadow: 0px 10px 20px 0px #d8d8d8;
+	height: 62px;
+	color: #000;
+	justify-content: center;
+}
+
+.nav-wrapper{
+	max-width: 1200px;
+	width: 90%;
+	padding: 0px 90px;
+}
+
 .logo{
-	height: 80%;
-	margin: auto 0px;
-	margin-left: 20px;
+	padding: 4px 0px;
+	max-width: 50px;
 	img{
 		height: 100%;
 	}
-}
-
-.nav{
-	display: flex;
-	height: 60px;
-	background-color: #000;
-}
-
-.index .nav{
-	border-bottom: 1px solid rgba(#fff, 0.3);
-	background-color: rgba(#000, 0);
 }
 
 .menu{
-	display: flex;
-	margin-left: auto;
+	color: black;
+	margin-left: 20px;
+	flex-wrap: wrap;
 	&_item{
-		list-style-type: none;
-		padding: 20px;
+		padding: 27px 0px;
 		&_link{
-			text-decoration: none;
 			padding: 20px;
-			text-align: center;
 			font-weight: 800;
-			color: #fff;
+			font-size: 1.2rem;
+			color: #7a7a7a;
+			&:hover{
+				color: #1abc9c;
+			}
 		}
-		&_link:hover{
-			color: #000;
-			background-color: #fff;
-			border-bottom: 2px solid gray;
-			transition: background-color 0.5s linear;
-		}
-		&_btn{
-			display: none;
-			color: #fff;
-			margin-right: 20px;
-		}
-		
-	}
-	&_mobile{
-			display: block !important;
-	}
-}
-
-.fa-bars:before {
-    vertical-align: -webkit-baseline-middle;
-}
-
-/*===========================================
-               FOOTER
-============================================*/
-
-.footer{
-	background-color: #000;
-	color: #bcbcbc;
-	padding: 50px 30px;
-	font-size: 20px;
-	.logo{
-		height: 70px;
-		position: absolute;
-		bottom: 0px;
-		margin-left: 0px;
-	}
-	a{
-		color: #888888;
-	}
-
-	li{
-		margin-bottom: 10px;
-	}
-
-	.social{
-		justify-content: space-between;
-		//margin-top: 20px;
-	}
-}
-
-/*===========================================
-               HOME
-============================================*/
-
-.videobg{
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: -10;
-	filter: grayscale(0.7);
-} // Пофиксить горизонтальную прокрутку
-
-
-.main{
-	padding: 10% 10% 0;
-	.title{
-		margin: auto;
-		line-height: 100px;
-		color: #fff;
-		h1, h2{
-			text-align: center;	
-		}
-		h1{
-			font-size: 100px;
-		}
-		h2{
-			font-size: 36px;
-			letter-spacing: 18px;
-			font-weight: lighter;
-		}
-	}
-
-	.text{
-		margin: auto;
-		width: 85%;
-		text-align: center;
-		p{
-			margin-bottom: 30px;
-			color: #fff;
-		}
-	}
-}
-/*===========================================
-               AUTHOR
-============================================*/
-
-.header{
-	background-size: cover;
-}
-
-.header.author{
-	background-image: url(../img/header.jpg);
-	height: 720px;
+	}	
 }
 
 .social{
-	display: flex;
-	justify-content: space-around;
-	&_bar{
-		width: 300px;
-		margin: auto;
-	}
-	&_item{
-		list-style-type: none;
-		&_link{
-			color: #fff;
-		}
-	}
-}
-
-.alex{
-	margin: 60px auto;
-
-	img{
-		width: 100%;
-		border-radius: 50%;
-	}
-}
-
-/*===========================================
-               BLOG
-============================================*/
-
-.header.blog{
-	height: 620px;
-	background-image: url(../img/bg_blog.jpg);
-}
-
-//--------------
-// .header.blog *{
-// 	color: #000 !important;
-// }
-//--------------
-
-.search{
-	display: inline-block;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	width: 50%;
-	margin-top: 90px;
-	position: relative;
-	&_form{
-		padding: 15px 20px 15px 60px;
-		width: 100%;
-		border: none;
-		border-radius: 50px;
-		outline: none;
-		background-color: #d5d5d5;
-		font-size: 20px;
-		border: 1px solid #acacac;
-		transition: background-color 0.3s linear
-	}
-	&_form:focus{
-		background-color: #fff;
-		transition: background-color 0.3s linear;
-	}
-	&_btn{
-		background: none;
-		border: none;
-		color: #000;
-		outline: none;
-		position: absolute;
-		left: 11px;
-		top: 0;
-		transform: translateY(50%);
-		// Костыли
-		padding: 20px;
-		margin: -37px -20px -20px -20px;
-	}
-	&_btn:hover{
-		filter: drop-shadow(0px 0px 4px rgba(0,0,0,1));
-		i{
-			font-size: 30px;
-			//Костыли
-			margin-top: -3px;
-		}
-	}
-	
-}
-
-.category{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 50px 35px;
-	justify-content: space-between;
-	&_item{
-		margin: 10px 0px;
-		padding: 20px;
-		border-radius: 50px;
-		border: 1px solid #000;
-		font-weight: 800;
-		transition: 0.3s linear color;
-		transition: 0.3s linear background-color;
-	}
-	&_item.active{
-		background-color: #000;
-		color: #fff;
-		border-color: #fff;
-	}
-	&_item:hover{
-		background-color: #000;
-		color: #fff;
-		transition: 0.3s linear color;
-		transition: 0.3s linear background-color;
-	}
-}
-
-.article{
-	margin-left: 20px;
-	margin-bottom: 100px;
-	background-color: #000;
-	box-shadow: 0px 0px 15px 5px #00000070;
-	&_prev{
-		&_img{
-			max-height: 400px;
-			overflow: hidden;
-			img{
-				width: 100%;
-			}	
-		}
-		&_content{
-			background-color: #000;
-			position: relative;
-			p{
-				display: inline-block;
-				width: 85%;
-				padding: 10px;
-				background-color: #eee;
+	margin-left: auto;
+	li{
+		padding-top: 20px;
+		a{
+			padding: 10px;
+			i{
+				font-size: 2.5rem;
 			}
 		}
-		&_btn{
-			width: 14%;
-			display: inline-block;
-			color: #fff;
-			text-align: center;
-			vertical-align: super;
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		&_footer{
-			height: 20px;
-			background-color: #000;
+		a:visited{
+			color: #000;
 		}
 	}
-	h3{
-		margin: 0px;
-		padding: 20px;
-		background-color: #eee;
+}
+.fa-facebook-f{
+	color: #3b5998;
+}
+.fa-twitter{
+	color: #00aced;
+}
+.fa-ellipsis-h{
+	color: #979795;
+}
+
+/*===========================================
+               FORM
+============================================*/
+
+input{
+	width: 250px;
+	height: 45px;
+	border: 1px solid #e3e3e3;
+	padding-left: 20px;
+	&::placeholder{
+		color: #7a7a7a;
 	}
 }
 
-.side{
-	&_search{
-		overflow: hidden;
-		border-radius: 12px;
-		width: 75%;
-		margin-top: 40px;
-		&_bar{
-			background-color: #eee;
-			box-shadow: 0px 0px 15px 5px #00000070;
-			padding: 10px 10px 40px;
-			margin-bottom: 100px;
-			//Костыль
-			margin-right: 15%;
-			overflow: hidden;
-		}
-	}
-	&_search_btn{
-		background-color: #000;
-		color: #fff;
-		left: 17px;
-	}
-	&_search_form{
-		padding-left: 70px;
-		border-radius: 12px;
-		background-color: #fff;
-	}
+
+button{
+	background-color: #1abc9c;
+	border: none;
+	color: #fff;
+	padding: 0px 15px
 }
 
-.taglist{
+/*===========================================
+               SERVICES
+============================================*/
+
+.services{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 25px;
-	&_item{
-		font-size: 16px;
-		border: 1px solid #000;
-		border-radius: 16px;
-		padding: 10px;
-		margin: 4px;
-	}
 }
 
-
-/*===========================================
-               CONTACTS
-============================================*/
-
-.header.contacts{
-	.title{
-		color: #000;
-		margin-bottom: 200px;
-	}
-}
-
-.contactList{
+.service{
 	text-align: center;
-	font-size: 40px;
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-	font-weight: 800;
-	&_item{
-		margin: 20px 0px;
-		font-size: 30px;
-		font-weight: 200;
-		&_link{
-			color: #000;
-			text-decoration: none;
-		}
-		&_link:visited{
-			color: #000;
-		}
-		&_link:hover{
-			text-decoration: underline;
+	margin: 20px 0px 60px;
+	&_icon{
+		height: 70px;
+		margin-bottom: 40px;
+		i{
+			font-size: 70px;
 		}
 	}
-}
-
-/*===========================================
-               ARTICLE
-============================================*/
-
-.ARTICLE{
-	position: relative;
-	padding: 50px 0px;
-	h3{
-		margin: 50px 0px;
+	h4{
+		font-size: 3rem;
+		font-weight: 1000;
+		margin-bottom: 35px;
 	}
 	p{
-		line-height: 34px;
+		font-size: 1.8rem;
+		line-height: 3rem;
 	}
 }
 
-.header_article{
-	background-image: url(../img/prev1.jpg);
-	height: 600px;
-	.title{
-		background-color: #000;
-		padding-top: 20px;
-	}
+.fa-mobile-alt{
+	color: #599dbb;
 }
 
-.article_back_btn{
-	color: #fff;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 80px;
-	height: 80px;
-	background-color: #000;
-	text-align: center;
-	&:hover{
-		box-shadow: 4px 4px 20px 8px #0000006b;
-	}
-	i {
-		margin-top: 10%;
-	}
+.fa-chart-line{
+	color: #9f5cd8;
+}
+.fa-lightbulb{
+	color: #f1438a;
 }
 
 /*===========================================
-               MEDIA
+               CONTENTS
 ============================================*/
 
-@media screen and (max-width: 990px){
-	.side_search_bar{
-		margin: auto;
-		margin-bottom: 40px;
-	}
+#contents{
+	padding-bottom: 100px;
+}
 
-	.article{
-		margin: auto;
-		margin-bottom: 100px;
-	}
+.slider-wrapper{
+	width: 768px;
+	min-width: 700px;
+}
 
-	.footer .logo{
-		position: static;
-		margin-top: 10px;
+.slider{
+	width: 100%;
+	img{
+		width: 100%;
 	}
 }
 
 
-@media screen and (max-width: 765px){
-	.menu_item_btn{
-		display: block;
-		position: absolute;
-		right: 20px;
-	}
-	.menu_item{
-		z-index: 10000;
-		padding: 0px;
-	}
-	.menu_item_link{
+.slide{
+	display: none;
+}
+.slide:first-child{
+	display: block;
+}
+
+.accardion-weapper{
+	width: 364px;
+	min-width: 324px;
+}
+
+.accardion{
+	border: 2px solid #f4f4f4;
+}
+
+.acc{
+	&_title{
+		border: 2px solid #f4f4f4;
 		padding: 20px;
-		display: block;
+		.massage{
+			&_main{
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+			}
+			&_main.active{
+				font-size: 1rem;
+				margin-bottom: 10px;
+				font-weight: 1000;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+			}
+			&_sub{
+				font-size: 1rem;
+				margin-bottom: 10px;
+				font-weight: 1000;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				color: #c9c9c9;
+			}
+			&_sub.active{
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				color: #000;
+			}
+		}
 	}
-	.menu{
-		background-color: rgba(#000, 0.8);
+	&_content{
 		display: none;
-		margin-top: 60px;
-		position: absolute;
-		right: 0px;
-		width: 40%;
-		height: 100%;
-		
-	}
-	.menu_mobile{
-		animation: navup linear 0.2s;
-
-		// @kayframes navup{
-		// 	0% {
-		// 		right: -40%;
-		// 	};
-
-		// 	100% {
-		// 		right: 0;
-		// 	};
-		// };
-
-		//костыли
-		@mixin keyframes($name) {
-
-		  @keyframes navup {
-		    @content;
-		  }
-		}
-		@include keyframes(navup){
-			0%   { right: -40%; }
-			100% { right: 0; }
-		};
-	}
-
-	.category{
-		justify-content: center;
-		&_item{
-			margin: 10px;
-		}
-	}
-
-	.search{
-		width: 80%;
-	}
-
-	.main .title h2{
-		line-height: 35px;
-		margin-bottom: 30px;
-	}
-
-	.header_article .title{
-		padding: 10px;
-	}
-
-	// .sidebar{
-	// 	overflow: hidden;
-	// }
-}
-
-
-@media screen and (max-width: 720px){
-    
-	.main .title{
-		h1{
-			font-size: 60px;
-		}
-		h2{
-			font-size: 30px;
-		}
-	}
-}
-
-@media screen and (max-width: 560px){
-	.alex{
-		width: 90%;
-	}
-
-	article{
-		padding: 0px 22px;
-	}
-}
-
-@media screen and (max-width: 425px){
-	
-	.main .text p{
-		font-size: 14px;
 	}
 }
