@@ -1,0 +1,1058 @@
+@import "compass/reset";
+
+/*===========================================
+               HELPERS
+============================================*/
+
+h1, h2, h3, h4, h5, h6, p, a, li, ul, div, span, input, textarea{
+	font-family: 'Montserrat';
+}
+
+strong{
+	color: #1abc9c
+}
+
+a, a:visited{
+	text-decoration: none;
+	color: #1abc9c
+}
+
+html{
+	font-size: 10px;
+}
+
+.active-item{
+	display: block;
+}
+
+/*===========================================
+               HEADER
+============================================*/
+header{
+	padding: 90px 0px 30px;
+	background-color: #7a7a7a;
+	min-height: 100vh;
+	color: #fff;
+	h1{
+		font-size: 4rem;
+		text-align: center;
+		margin-top: 18px;
+	}
+	h3{
+		font-size: 1.4rem;
+		text-align: center;
+		font-weight: 1000;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	h5{
+		font-size: 2.2rem;
+		text-align: center;
+		margin-top: 26px;
+	}
+	p{
+		font-size: 1.5rem;
+		text-align: center;
+		margin-top: 26px;
+		color: #727272;
+		a, a:visited{
+			color: #1abc9c;
+		}
+	}
+}
+
+.subscribe_top{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 18%;
+}
+
+
+/* ------ TITLE ------ */
+
+.title{
+	margin: 100px auto;
+	&-icon{
+		height: 70px;
+		margin-bottom: 40px;
+		text-align: center;
+		i{
+			font-size: 60px;
+		}
+	}
+	h3{
+		font-size: 1.8rem;
+		margin-bottom: 30px;
+		text-align: center;
+		font-weight: 1000;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	h2{
+		font-size: 6rem;
+		text-align: center;
+	}
+}
+
+
+
+/*===========================================
+               NAV
+============================================*/
+
+nav, .nav-wrapper, .menu, .social{
+	display: flex;
+	height: 100%;
+}
+
+nav{
+	box-shadow: 0px 10px 20px 0px #d8d8d8;
+	height: 62px;
+	color: #000;
+	justify-content: center;
+}
+
+.nav-wrapper{
+	max-width: 1200px;
+	width: 90%;
+	padding: 0px 90px;
+}
+
+.logo{
+	padding: 4px 0px;
+	max-width: 50px;
+	img{
+		height: 100%;
+	}
+}
+
+.menu{
+	color: black;
+	margin-left: 20px;
+	flex-wrap: wrap;
+	&_item{
+		padding: 27px 0px;
+		&_link{
+			padding: 20px;
+			font-weight: 800;
+			font-size: 1.2rem;
+			color: #7a7a7a;
+			&:hover{
+				color: #1abc9c;
+			}
+			&:visited{
+				color: #7a7a7a;;
+			}
+		}
+	}
+	&_btn{
+		display: none;
+	}
+
+}
+
+.social{
+	margin-left: auto;
+	li{
+		padding-top: 20px;
+		a{
+			padding: 10px;
+			i{
+				font-size: 2.5rem;
+			}
+		}
+		a:visited{
+			color: #000;
+		}
+	}
+}
+.fa-facebook-f{
+	color: #3b5998;
+}
+.fa-twitter{
+	color: #00aced;
+}
+.fa-ellipsis-h{
+	color: #979795;
+}
+
+/*===========================================
+               FORM
+============================================*/
+
+input{
+	width: 250px;
+	height: 45px;
+	border: 1px solid #e3e3e3;
+	padding-left: 20px;
+	&::placeholder{
+		color: #7a7a7a;
+	}
+}
+
+
+button{
+	background-color: #1abc9c;
+	border: none;
+	color: #fff;
+	padding: 0px 15px;
+	font-size: 18px;
+}
+
+/*===========================================
+               SERVICES
+============================================*/
+
+.services{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.service{
+	text-align: center;
+	margin: 20px auto 60px;
+	&_icon{
+		height: 70px;
+		margin-bottom: 40px;
+		i{
+			font-size: 70px;
+		}
+		.fa-mobile-alt{
+			color: #599dbb;
+		}
+
+		.fa-chart-line{
+			color: #9f5cd8;
+		}
+		.fa-lightbulb{
+			color: #f1438a;
+		}
+	}
+	h4{
+		font-size: 3rem;
+		font-weight: 1000;
+		margin-bottom: 35px;
+	}
+	p{
+		font-size: 1.8rem;
+		line-height: 3rem;
+		color: #727272;
+	}
+}
+
+
+
+/*===========================================
+               CONTENTS
+============================================*/
+
+#contents{
+	padding-bottom: 100px;
+}
+
+.slider-wrapper{
+	width: 768px;
+	min-width: 700px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.slider{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+	&_controller{
+		display: flex;
+		margin-left: 50%;
+		transform: translateX(-50%);
+		justify-content: center;
+		font-size: 20px;
+		color: #727272;
+		position: absolute;
+		top: 15px;
+		&_item{
+			margin: 10px 15px;
+		}
+		&_item i.active{
+			color: #1abc9c;
+		}
+	}
+}
+
+
+.slide{
+	display: none;
+}
+.slide.show{
+	display: block;
+}
+
+.accardion-weapper{
+	width: 364px;
+	min-width: 324px;
+}
+
+.accardion{
+	border: 2px solid #f4f4f4;
+	margin-bottom: 40px;
+}
+
+.acc{
+	&_title{
+		border: 2px solid #f4f4f4;
+		padding: 20px;
+		.massage{
+			&_main{
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+			}
+			&_sub{
+				font-size: 1rem;
+				margin-bottom: 10px;
+				font-weight: 1000;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				color: #727272;
+			}
+		}
+	}
+	&_title.active{
+		.massage{
+			&_main{
+				font-size: 1rem;
+				margin-bottom: 10px;
+				font-weight: 1000;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+			}
+			&_sub{
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				color: #000;
+			}
+		}
+	}
+	&_content{
+		display: none;
+		padding: 18px 25px;
+		border: 1px solid #f4f4f4;
+		font-size: 16px;
+		line-height: 25px;
+	}
+	&_content.active-item{
+		display: block;
+	}
+	&_sub{
+		font-size: 18px;
+		color: #727272;
+	}
+}
+
+/*===========================================
+               PROVIDE
+============================================*/
+
+#provide{
+	background-color: #f7f7f7;
+}
+
+.provide{
+	justify-content: space-between;
+	&_card{
+		width: 364px;
+		background-color: #fff;
+		border: 4px solid #f4f4f4;
+		padding: 40px;
+		margin-bottom: 20px;
+		&_title{
+			font-size: 28px;
+		}
+		&_icon{
+			width: 120px;
+			height: 100px;
+			margin: 25px auto;
+			text-align: center;
+			padding: 15px;
+			i{
+				font-size: 80px;
+			}
+		}
+		&_list{
+			display: none;
+			margin-top: 30px;
+			&_item{
+				box-shadow: #f8f8f8 0px 3px 4px 0px;
+				font-size: 16px;
+				padding: 10px;
+				margin-bottom: 2px;	
+			}
+			&_item:hover{
+				background-color: #f4f4f4;
+			}
+		}
+	}
+	&_card:hover{
+		.provide_card_icon{
+			display: none;
+		}
+		.provide_card_list{
+			display: block;
+		}
+		.provide_card_title{
+			font-weight: bold;
+		}
+	}
+}
+
+/*===========================================
+               OUR WORKS
+============================================*/
+
+.works{
+	position: relative;
+	padding-top: 30px;
+	&_category{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: auto;
+		margin-bottom: 30px;
+		li{
+			margin: 20px 10px;
+			padding: 10px 15px;
+			font-size: 18px;
+			background-color: #1abc9c;
+			color: #fff;
+		}
+		li.active{
+			background-color: #000;
+		}
+	}
+	&_card{
+		height: 270px;
+		position: relative;
+		padding: 0px;
+		background-size: cover;
+		background-position: center center;
+		&_tags{
+			display: none;
+			padding: 5px 10px;
+			li{
+				color: #1abc9c;
+				background-color: #fff;
+				border-radius: 3px;
+				padding: 5px;
+				font-size: 12px;
+				margin: 10px 5px;
+			}
+			
+		}
+		&_foo{
+			background-color: #252830;
+			height: 70px;
+			position: absolute;
+			bottom: 0px;
+			color: #fff;
+			font-size: 16px;
+			padding: 10px;
+			display: none;
+		}
+	}
+	&_card:hover{
+		.works_card_tags{
+			display: flex;
+		}
+		.works_card_foo{
+			display: block;
+		}
+	}
+}
+
+/*===========================================
+               OUR TEAM
+============================================*/
+
+.team{
+	margin-bottom: 80px;
+	justify-content: space-between;
+	&_card{
+		width: 365px;
+		margin: 0px auto 20px;
+		padding: 10px 0px;
+		&_img{
+			width: 80%;
+			height: 200px;
+			margin: auto;
+			img{
+				margin: auto;
+				display: block;
+				height: 100%
+			}
+		}
+		h4{
+			margin-top: 20px;
+			font-size: 28px;
+			text-align: center;
+		}
+		p{
+			margin-top: 10px;
+			font-size: 18px;
+			text-align: center;
+		}
+		.social{
+			margin: auto;
+			justify-content: center;
+			height: 60px;
+		}
+	}
+	&_card:hover{
+		box-shadow: #dddddd 0px 0px 17px 13px;
+
+	}
+}
+
+/*===========================================
+               DIGITS
+============================================*/
+
+#digit{
+	background-color: #141519;
+	color: #fff;
+}
+
+.digit{
+	padding: 60px;
+	&_title{
+		font-size: 32px;
+		margin: 70px auto 20px;
+	}
+	&_icon{
+		font-size: 50px;
+	}
+	&_card{
+		margin-bottom: 20px;
+		text-align: center;
+		h5{
+			font-size: 60px;
+			margin: 20px 0px;
+		}
+		p{
+			font-size: 16px;
+			margin: 15px 0px;
+		}
+	}
+}
+
+/*===========================================
+               SUBSCRIBE
+============================================*/
+
+#subscribe{
+	background-color: #f7f7f7;
+}
+
+.subscribe{
+	padding: 85px;
+	&_wrapper{
+		width: 460px;
+	}
+	&_title{
+		font-size: 42px;
+		margin-bottom: 30px;
+	}
+	&_form{
+		position: relative;
+		&_input{
+			position: relative;
+			width: 460px;
+			border: none;
+		}
+		&_btn{
+			position: absolute;
+			background-color: #fff;
+			right: 6px;
+			bottom: 6px;
+			color: #1abc9c;
+			font-size: 25px;
+		}
+	}
+	p{
+		font-size: 18px;
+		color: #727272;
+		margin-top: 30px;
+	}
+}
+
+/*===========================================
+               BUY IT
+============================================*/
+
+.buyit{
+	&_title{
+		.logo{
+			height: 80px;
+			width: 80px;
+			margin: auto;
+			margin-bottom: 30px;
+			transform: translateX(-50%);
+		}
+		p{
+			font-size: 18px;
+			margin-top: 20px;
+			text-align: center;
+			font-style: italic;
+		}
+	}
+	&_btn{
+		margin: auto;
+		padding: 20px 35px;
+		margin-bottom: 70px;
+	}
+	
+
+}
+
+/*===========================================
+               SHOP
+============================================*/
+
+#shop{
+	background-color: #f7f7f7;
+}
+
+.shop{
+	justify-content: space-between;
+	&_card{
+		background-color: #fff;
+		text-align: center;
+		width: 365px;
+		padding: 45px 80px;
+		font-size: 16px;
+		&_title{
+			font-size: 28px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+		&_list{
+			&_item{
+				margin: 20px 0px;
+				b{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+	&_btn{
+		padding: 15px 25px;
+		margin-bottom: 30px;
+	}
+	&_btn:active{
+		background-color: #fff;
+		color: #1abc9c;
+	}
+	&_sub{
+		p{
+			margin: 30px auto 80px;
+		}
+	}
+	&_card:hover{
+		box-shadow: #dddddd 0px 0px 17px 13px;
+	}
+	&_card.active{
+		box-shadow: none;
+		background-color: #1abc9c; 
+		color: #fff;
+		.circle{
+			border-color: #fff;
+		}
+		p{
+			color: #fff;
+		}
+	}
+
+	.circle{
+		border: 4px double #727272; //#f4f4f4
+		border-radius: 50%;
+		height: 135px;
+		width: 135px;
+		margin: 10px auto 30px;
+
+		h5{
+			font-size: 36px;
+			vertical-align: middle;
+			transform: translateY(-50%);
+			margin-top: 50%;
+		}
+	}
+
+	p{
+		color: #727272;
+		line-height: 20px;
+	}
+}
+
+/*===========================================
+               GETIT
+============================================*/
+
+.getit{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+	&_title{
+		padding: 0px 20px;
+		p{
+			margin-top: 40px;
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+}
+
+/*===========================================
+               FEEDBACK
+============================================*/
+
+#feedback{
+	background-color: #a5a5a5;
+}
+
+.feedback{
+	flex-direction: column;
+	padding-bottom: 100px;
+	&_avatar{
+		width: 150px;
+		height: 150px;
+		margin: 100px auto 40px;
+		img{
+			width: 100%;
+			border-radius: 50%;
+		}
+	}
+	&_starbar{
+		margin: auto;
+		font-size: 20px;
+		margin-bottom: 30px;
+		color: gold;
+		text-align: center;
+	}
+	&_contact{
+		font-weight: bold;
+	}
+	&_slider{
+		position: relative;
+		height: 500px;
+		&_controller{
+			width: 100%;
+			display: flex;
+			position: absolute;
+			top: 35%;
+			&_item{
+				font-size: 40px;
+				width: 50px;
+				color: #727272;
+				position: absolute;
+			}
+			#prev{
+				left: 10px;
+			}
+			#next{
+				right: 10px;
+			}
+		}
+	}
+	p{
+		color: #fff;
+		margin: 20px 0px;
+		font-size: 18px;
+		text-align: center;
+		margin-bottom: 20px;
+		line-height: 30px;
+	}
+}
+
+/*===========================================
+               CONTACTS
+============================================*/
+
+.contact{
+	padding-bottom: 100px; 
+	&_form{
+		width: 625px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		&_input{
+			margin-bottom: 20px;
+			&__name{
+				width: 48%;
+			}
+			&__email{
+				width: 48%;
+			}
+			&__subject{
+				width: 100%;
+			}
+			&__message{
+				width: 100%;
+				height: 205px;
+				padding: 15px 20px;
+				border: 1px solid #e3e3e3;
+			}
+			&__message::-webkit-input-placeholder{
+				color: #7a7a7a;
+			}
+		}
+	}
+	&_btn{
+		background-color: #1abc9c;
+		padding: 15px 25px;
+		margin-bottom: 30px;
+	}
+}
+
+/*===========================================
+               ENDINFO
+============================================*/
+
+#endinfo{
+	background-color: #f7f7f7;
+	padding: 46px;
+}
+
+.endinfo{
+	justify-content: space-between;
+	text-align: center;
+	&_item{
+		border-left: 2px solid #727272;
+	}
+	&_icon{
+		font-size: 36px;
+		margin-bottom: 20px;
+	}	
+	&_item:first-child{
+		border-left: none;
+	}
+	h6{
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	p{
+		margin-top: 20px;
+		font-size: 18px;
+		color: #000;
+	}
+}
+
+/*===========================================
+               FOOTER
+============================================*/
+
+footer{
+	background-color: #252830;
+	padding: 50px;
+
+	.logo{
+		width: 60px;
+		height: 60px;
+		float: left;
+		img{
+			width: 100%
+		}
+	}
+
+	p{
+		padding-left: 20px; 
+		font-size: 18px;
+		color: #fff;
+		line-height: 25px;
+	}
+}
+
+/*===========================================
+               MEDIA QUERYS
+============================================*/
+
+
+@media screen and (max-width: 1090px) {
+
+	.subscribe_top{
+		flex-direction: column;
+		width: 300px;
+		margin: 18% auto 0px;
+		input{
+			width: 100%;
+		}
+		&_btn{
+			width: 100%;
+			padding: 18px 30px;
+		}
+	}
+
+	.menu{
+		display: none;
+	}
+	.menu_btn{
+		display: block;
+		margin-left: auto;
+		order: 3;
+	}
+	.nav-wrapper{
+		position: relative;
+	}
+	nav .logo{
+		order: 0;
+	}
+	.social{
+		margin-left: 20px;
+		order: 1;
+	}
+	.menu_mobile{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		position: absolute;
+		background-color: rgba(0,0,0,0.9);
+		right: -47px;
+		top: 62px;
+		order: 4;
+		width: 200px;
+		height: 120vh;
+		z-index: 100;
+	}
+
+
+	.provide{
+		justify-content: center;
+	}
+
+	
+}
+
+@media screen and (max-width: 1220px) {
+	
+	.shop{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.shop_card{
+		width: 80%;
+		margin: 40px auto;
+	}
+
+	.getit{
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width: 780px) {
+
+	.nav-wrapper{
+		width: 100%;
+		.logo{
+			margin-left: 20px;
+		}
+	}
+
+	.menu_mobile{
+		right: 0;
+	}
+
+	.slider-wrapper{
+		width: 100%;
+		min-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 580px) {
+	
+
+	.nav-wrapper{
+		padding: 0px;
+	}
+
+	.title{
+		h3{
+			font-size: 1.6rem;
+		}
+		h2{
+			font-size: 5rem;
+		}
+	}
+
+
+	.provide_card{
+		width: 80%;
+	}
+
+	.team{
+		justify-content: center;
+	}
+
+	.team_card{
+		width: 80%;
+	}
+
+	.digit_title{
+		padding: 40px;
+	}
+
+	.subscribe{
+		padding: 40px;
+	}
+	.subscribe_form_input{
+		width: 100%;
+	}
+
+	.buyit_title p{
+		padding: 0px 20px;
+	}
+
+	.feedback p{
+		padding: 20px;
+	}
+
+	.contact_form{
+		padding: 20px;
+	}
+
+	.contact_btn{
+		width: 100%;
+	}
+	
+	.endinfo_item{
+		border: none;
+		margin-bottom: 50px;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+	
+	.getit img{
+		width: 100%
+	}
+
+	.getit a{
+		text-align: center;
+		margin: auto;
+		width: 70%;
+	}
+
+	footer .logo{
+		margin: 20px auto;
+	}
+}
